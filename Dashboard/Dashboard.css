@@ -9,6 +9,7 @@ body,html{
 
 .left-side>ul>li{
     margin-top: 20px;
+    width: 200px;
 }
 .chart_week>h6{
     color: #838383;
