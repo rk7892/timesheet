@@ -90,7 +90,7 @@
 
 
 .side-header {
-    margin-left: 900px;
+    margin-left: 690px;
     margin-top: 16px;
 }
 
@@ -99,10 +99,10 @@
     color: #000;
     font-size: 16px;
     margin-right: 30px;
+
 }
 
-#header-text {
-    margin-right: 40px;
+#header-text {  
     margin-top: 10px;
     color: #000;
     font-family: Inter;
@@ -110,10 +110,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-right: 40px;
 }
 
 .dropdown {
-    margin-right: 0px;
     color: #000;
 }
 
@@ -170,13 +170,12 @@
 
 /* banner section */
 .banner {
-    width: 100%;
+    width: 100%;   
     border-radius: 4px;
     border: 1px solid rgba(217, 217, 217, 0.34);
     background: #F5F5F5;
 }
-
-.img-banner {
+.img-banner{
     margin-top: 30px;
     margin-left: 30px;
     width: 200px;
@@ -184,7 +183,7 @@
 }
 
 
-.banner-product div {
+.banner-product div {  
     margin-top: 30px;
     flex-wrap: wrap;
 }
@@ -208,8 +207,8 @@
 }
 
 /* bannner section 2 */
-.banner-products {
-
+.banner-products{
+   
     border-radius: 4px;
     border: 1px solid rgba(217, 217, 217, 0.34);
     background: #F5F5F5;
@@ -238,7 +237,7 @@
 }
 
 .banner-card h2 {
-    margin-top: 10px;
+    margin-top: 10px; 
     color: #000;
     font-family: Inter;
     font-size: 20px;
