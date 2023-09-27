@@ -47,7 +47,6 @@
     background: #004CFF;
     border-radius: 10px;
     font-size: 16px;
-
 }
 
 #Client-list a {
@@ -62,7 +61,6 @@
 .fa-users {
     color: #FFF;
 }
-
 
 /* header section */
 .header {
@@ -89,7 +87,7 @@
 
 
 .side-header {
-    margin-left: 900px;
+    margin-left: 690px;
     margin-top: 16px;
 }
 
@@ -101,18 +99,18 @@
 }
 
 #header-text {
-    margin-right: 40px;  
+    margin-right: 30px;  
     margin-top: 10px;
     color: #000;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .dropdown {
-    margin-right: 0px;
+  
     color: #000;
 }
 
@@ -149,6 +147,7 @@
     line-height: normal;
     background-color: #FFF;
 }
+
 .search-container {
     position: relative;
     width: 200px;
@@ -184,17 +183,14 @@ input[type="text"] {
     margin-top: 40px;
     margin-left: 20px;
     border-collapse: collapse;
-    
- 
 }
 
 #table-row {
-
     text-align: left;
     border-bottom: 1px solid #ddd;
     background-color: #F4F4F4;
-    width: 800px;
-    height: 70px;
+    width: 700px;
+    height: 60px;
     color: #7B7B7B;
     font-family: Mulish;
     font-size: 16px;
@@ -203,8 +199,6 @@ input[type="text"] {
     line-height: normal;
     padding-top: 20px;
     padding-left: 20px;
-
-
 }
 
 td {
