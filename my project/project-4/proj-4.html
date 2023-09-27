@@ -162,12 +162,32 @@
                                 <div class="col-lg-3 col-sm-12">
                                     <form>
                                         <div class="form-grp ">
-                                            <label for="name" class="form-label">Project Name</label>
+                                            <label for="name" class="form-label">Select Client</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="project name" id="name"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="Select Client" id="name">
+                                                <div class="dropdown down">
+                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="mt-1 ms-2">
+                                                            <div class="d-flex justify-content-between align-item-center text-muted">
+                                                                <p>search</p>
+                                                                <p > <span class="material-symbols-outlined" >
+                                                                    search
+                                                                </span></p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mt-1 ms-2"><hr class="dropdown-divider mb-2 ms-0">
+                                                            <a href="dropdown-item" class="text-muted">SMRT
+                                                            </a></li>
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" > Hitachi</a></li>
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">  TATA</a></li>
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">BuildINT</a></li>
+                                                        
+
+                                                    </ul>
+                                                
+                                        </div>
                                         </div>
                                     </form>
 
@@ -180,10 +200,7 @@
                                         <div class="form-grp ">
                                             <label for="name" class="form-label">Project Name</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="project name" id="name"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="project name" id="name">
                                         </div>
 
                                     </form>
@@ -193,10 +210,19 @@
                                         <div class="form-grp ">
                                             <label for="Status" class="form-label">Status</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="Active" id="status"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="Active" id="status"><div class="dropdown down">
+                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">Active</a></li>
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item"> InActive</a></li>
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">Hold</a></li>
+                                                        
+
+                                                    </ul>
+                                                
+                                        </div>
                                         </div>
                                     </form>
                                 </div>
@@ -206,10 +232,20 @@
                                             <label for="Client" class="form-label">Select project Manager</label>
                                             <input type="project"
                                                 class="form-control form-control-lg fs-6 position-relative"
-                                                placeholder="tushar B" id="client"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="tushar B" id="client"><div class="dropdown down">
+                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">Tushar B</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" >Arun</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">Raj kumar</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">Suprith Kumar</a></li>
+                                                        
+
+                                                    </ul>
+                                                
+                                        </div>
                                         </div>
 
                                     </form>
@@ -226,9 +262,21 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="billable" id="billable">
-                                            <span class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                <div class="dropdown down">
+                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">Billable</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" > Non Billable</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">Admin</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">Training</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-primary ">+ Add New Project</a></li>
+                                                        
+
+                                                    </ul>
+                                                
+                                        </div>
                                         </div>
                                     </form>
 
@@ -243,7 +291,7 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="12/07/2023" id="date">
-                                            <span class="material-symbols-outlined position-absolute"
+                                            <span class="material-symbols-outlined position-absolute month"
                                                 style="color: #9B9B9B;">
                                                 calendar_month
                                             </span>
@@ -259,7 +307,7 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="12/07/2023" id="end date">
-                                            <span class="material-symbols-outlined position-absolute"
+                                            <span class="material-symbols-outlined position-absolute month"
                                                 style="color:#9B9B9B;">
                                                 calendar_month
                                             </span>
@@ -284,7 +332,7 @@
                             <ul class="nav nav-tabs mt-3 ms-1">
                                 <li class="nav-item "><a href="#" class="nav-link active" style="background-color: #e5ebfa
                         ;color: #004CFF;border-bottom:2px solid #004CFF;">Create Task</a></li>
-                                <li class="nav-item"><a href="/project-2/proj-2.html" class="nav-link text-dark">Assign
+                                <li class="nav-item"><a href="/my project/project-5/proj-5.html" class="nav-link text-dark">Assign
                                         Team</a></li>
 
                             </ul>
@@ -344,7 +392,20 @@
                                             <label for="Status" class="form-label"
                                                 style="font-weight: 500;font-size: 14px;">Status</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="on going" id="status">
+                                                placeholder="on going" id="status"><div class="dropdown down">
+                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        
+                                                        <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">On going</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" >completed</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">In active</a></li>
+                                                        <li class="mt-2  ms-2"><a href="dropdown-item" class="text-muted">Hold</a></li>
+                                                        
+
+                                                    </ul>
+                                                
+                                        </div>
                                         </div>
                                     </form>
                                 </div>
