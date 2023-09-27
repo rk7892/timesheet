@@ -5,7 +5,7 @@
 }
 
 .row {
-    width: 100%; 
+    width: 100%;
 }
 
 /*  side-bar section*/
@@ -66,7 +66,7 @@
 
 /* header section */
 .header {
-    width: 170vh;
+    width: 168vh;
     height: 80px;
     background: #FFF;
     box-shadow: 2px 4px 16px 0px rgba(190, 190, 190, 0.25);
@@ -80,7 +80,8 @@
     height: 12px;
     font-size: 20px;
 }
-.Search-icon{
+
+.Search-icon {
     margin-right: 10px;
     font-size: 18px;
     color: #666;
@@ -101,7 +102,7 @@
 }
 
 #header-text {
-    margin-right: 40px;  
+    margin-right: 40px;
     margin-top: 10px;
     color: #000;
     font-family: Inter;
@@ -115,6 +116,7 @@
     margin-right: 0px;
     color: #000;
 }
+
 /* main content */
 .main {
     margin-top: 30px;
@@ -169,13 +171,13 @@
 /* banner section */
 .banner {
     width: 100%;
-    
-    
     border-radius: 4px;
     border: 1px solid rgba(217, 217, 217, 0.34);
     background: #F5F5F5;
 }
-.img-banner{
+
+.img-banner {
+    margin-top: 30px;
     margin-left: 30px;
     width: 200px;
     height: 150px;
@@ -183,10 +185,8 @@
 
 
 .banner-product div {
-    margin-right: 90px;
     margin-top: 30px;
     flex-wrap: wrap;
-
 }
 
 .banner-product h5 {
@@ -208,6 +208,13 @@
 }
 
 /* bannner section 2 */
+.banner-products {
+
+    border-radius: 4px;
+    border: 1px solid rgba(217, 217, 217, 0.34);
+    background: #F5F5F5;
+
+}
 
 
 
@@ -224,14 +231,14 @@
 .banner-products p {
     color: #000;
     font-family: Mulish;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .banner-card h2 {
-    margin-top: 10px; 
+    margin-top: 10px;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -240,8 +247,10 @@
     line-height: normal;
 }
 
+
+
 /* card section */
-.box-section a{
+.box-section a {
     text-decoration: none;
 
 }
@@ -274,7 +283,7 @@
     background: #FFF;
     margin-top: 20px;
     margin-left: 10px;
-    
+
 }
 
 #title h5 {
@@ -287,8 +296,9 @@
 }
 
 .badges {
-    background-color: rgba(14, 184, 91, 0.12);;
-  
+    background-color: rgba(14, 184, 91, 0.12);
+    ;
+
     font-family: Mulish;
     font-size: 20px;
     font-style: normal;
@@ -299,8 +309,9 @@
     height: 30px;
     text-align: center;
 }
-.badges span{
-    color: #0EB85B; 
+
+.badges span {
+    color: #0EB85B;
 
 }
 
@@ -315,12 +326,13 @@
     width: 100px;
     height: 30px;
     text-align: center;
-    
-   
+
+
 }
-.text-nobill span{
+
+.text-nobill span {
     color: #FFB406;
-   
+
 
 }
 
@@ -374,7 +386,7 @@
 
 /* add button section */
 .add-btn {
-    
+
     width: 60px;
     height: 60px;
 
