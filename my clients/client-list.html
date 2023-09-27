@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>client-list</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="client-list.css" />
+  <!-- bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!-- bootstrap jss link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- google fonts link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
+  <!-- icons link -->
+  <script src="https://kit.fontawesome.com/f20c552953.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-2">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <img src="client-list img/img 1.jpg" alt="ohoh product" class="img-fluid sideimg" />
+        <ul class="ul-list">
+          <li>
+            <i class="fa fa-th" aria-hidden="true"></i>
+            <a href="/timesheet_dashboard/Time_sheet_dashboard/Dashboard.html">Dashboard</a>
+          </li>
+          <li id="Client-list">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <a href="#">My Clients</a>
+          </li>
+          <li>
+            <i class="fa fa-list-alt" aria-hidden="true"></i><a href="/timesheet-project/project.html">My Projects</a>
+          </li>
+          <li>
+            <i class="fa fa-user-o" aria-hidden="true"></i><a href="/BUILDINT/build1.html">My Employees</a>
+          </li>
+          <li>
+            <i class="fa fa-file" aria-hidden="true"></i><a href="/Time--Sheet/My Time Sheet/My Time Sheet.html">My
+              Timesheet</a>
+          </li>
+          <li>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i><a href="/dinesh/approval.html">Approval </a>
+          </li>
+          <li>
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="/reports/reports.html">Reports</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-10 ps-0">
+      <!-- header section -->
+      <div class="header d-flex">
+        <div>
+          <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <div>
+          <div class="input-group ms-3 mt-3">
+            <button class="btn" type="button">
+              <i class="fas fa-search Search-icon"></i>
+            </button>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+            <div class="input-group-append"></div>
+          </div>
+        </div>
+        <div class="side-header d-flex">
+          <div>
+            <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+          </div>
+          <div id="header-text">Tushar B</div>
+          <div>
+            <img src="client-list img/img 2.jpg" alt="image" class="img-logo" />
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false"></button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Tushar B</a></li>
+              <li>
+                <a class="dropdown-item" href="#">tushar@builint.com</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Help</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="/login-page/login-page.html">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="main">
+        <div class="main-section d-flex justify-content-between">
+          <div>
+            <h2>My Clients List</h2>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Search Clients" />
+            <i class="fa fa-search search-button"></i>
+          </div>
+        </div>
+        <!-- table section -->
+
+        <table class="table">
+          <tr id="table-row">
+            <th id="table-row">Client ID</th>
+            <th id="table-row">Client Name</th>
+            <th id="table-row">Email ID</th>
+            <th id="table-row">No. of Projects</th>
+            <th id="table-row">Onboard Date</th>
+          </tr>
+          <tr>
+            <td class="p-3">C0001</td>
+            <td class="p-3">
+              <a href="/My Client list/client details/cd 1/client details.html">SMRT</a>
+            </td>
+            <td class="p-3">support@smrt.co</td>
+            <td class="p-3">02</td>
+            <td class="p-3">12/07/2023</td>
+          </tr>
+          <tr>
+            <td class="p-3">C0002</td>
+            <td class="p-3">Hitachi</td>
+            <td class="p-3">support@hthi.co</td>
+            <td class="p-3">04</td>
+            <td class="p-3">12/07/2023</td>
+          </tr>
+          <tr>
+            <td class="p-3">C0003</td>
+            <td class="p-3">BuildINT</td>
+            <td class="p-3">support@built.co</td>
+            <td class="p-3">04</td>
+            <td class="p-3">12/07/2023</td>
+          </tr>
+        </table>
+
+        <button class="button float-end">
+          <a href="client details/create client.html">+</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
