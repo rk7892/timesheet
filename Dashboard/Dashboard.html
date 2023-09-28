@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BuildINT_Timeshee</title>
         <link rel="stylesheet" href="Dashboard.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
         <!-- <link rel="stylesheet" href="/bootstrap-5.3.1-dist/css/bootstrap.min.css"> -->
         <!-- <script type="text/javascript" src="/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script> -->
@@ -18,9 +21,8 @@
         <div class="row">
             <!-- Left_menu -->
             <div class="col-2 p-0 pt-3 shadow bg-body collapse show" id="collapseOne">
-
                 <nav class="navbar ps-3">
-                    <div style="margin-left: 20px;">
+                    <div class="logoimg">
                         <a href="Dashboard.html" class="navbar-brand">
                             <img src="image/Buildint_logo.png" class="img-fluid" alt="buildintlogo">
                         </a>
@@ -139,20 +141,22 @@
                     </div>
                 </nav>
             </div>
-            <!-- Rightside -->
-            <div class="col-10  ps-0 pe-0 ">
-                <div class="header shadow p-2 bg-body d-flex pt-3">
-                    <div class="header_menu">
+            <!-- Right Side -->
+            <div class="col-sm-10  ps-0 pe-0 ">
+                <div class="col-12 header shadow p-2 d-flex pt-3">
+                    <!-- menu icon -->
+                    <div class="col-sm-1 header_menu">
                         <a href="#collapseOne" class="btn" data-bs-toggle="collapse">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#666;"
-                                class="bi bi-list" viewBox="0 0 16 16" style="margin-left: 20px;">
+                                class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                             </svg>
                         </a>
                     </div>
-                    <div class="input-group d-flex ps-4 pt-1">
-                        <div class="search-icon">
+                    <!-- search icon -->
+                    <div class="col-sm-1 pt-1">
+                        <div class="search-icon pt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#666;"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -160,56 +164,54 @@
                             </svg>
                         </div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="message" style="margin-right: 25px;" width="170"
-                        height="26" viewBox="0 0 114 18" fill="#000000">
-                        <path
-                            d="M104.222 16.2857H107.778C107.778 17.2286 106.978 18 106 18C105.022 18 104.222 17.2286 104.222 16.2857ZM114 14.5714V15.4286H98V14.5714L99.7778 12.8571V7.71429C99.7778 5.05714 101.556 2.74286 104.222 1.97143V1.71429C104.222 0.771429 105.022 0 106 0C106.978 0 107.778 0.771429 107.778 1.71429V1.97143C110.444 2.74286 112.222 5.05714 112.222 7.71429V12.8571L114 14.5714ZM110.444 7.71429C110.444 5.31429 108.489 3.42857 106 3.42857C103.511 3.42857 101.556 5.31429 101.556 7.71429V13.7143H110.444V7.71429Z"
-                            fill="#000000" />
-                        <circle cx="111" cy="4" r="3" fill="#FF3232" />
-                    </svg>
-                    <div class="profile">
-                        <img src="image/Profile.png" alt="profile">
+                    <div class="col-sm-5"></div>
+                    <!-- notification and profile -->
+                    <div class="col-sm-5 d-flex">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-3 pt-3 d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="20" viewBox="0 0 114 18"
+                                fill="#000000">
+                                <path
+                                    d="M104.222 16.2857H107.778C107.778 17.2286 106.978 18 106 18C105.022 18 104.222 17.2286 104.222 16.2857ZM114 14.5714V15.4286H98V14.5714L99.7778 12.8571V7.71429C99.7778 5.05714 101.556 2.74286 104.222 1.97143V1.71429C104.222 0.771429 105.022 0 106 0C106.978 0 107.778 0.771429 107.778 1.71429V1.97143C110.444 2.74286 112.222 5.05714 112.222 7.71429V12.8571L114 14.5714ZM110.444 7.71429C110.444 5.31429 108.489 3.42857 106 3.42857C103.511 3.42857 101.556 5.31429 101.556 7.71429V13.7143H110.444V7.71429Z"
+                                    fill="#000000" />
+                                <circle cx="111" cy="4" r="3" fill="#FF3232" />
+                            </svg>
+                        </div>
+                        <div class="col-sm-2 d-flex ps-4 pt-2">
+                            <img src="image/Profile.png" alt="profile">
+                        </div>
+                        <div class="col-sm-2 pt-3">
+                            <h6 class="fs-6 fw-semibold">Tushar B</h6>
+                        </div>
+                        <div class="col-sm-3 pt-2 ps-2 profile-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" dropdown-toggle data-bs-toggle="dropdown" width="18"
+                                height="18" fill="#000000" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <h5 class="ps-3">Tushar B</h5>
+                                </li>
+                                <li>
+                                    <h6 class="pt-1 ps-3 profile-arrow-mail fw-normal">tushar@builint.com</h6>
+                                </li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="profile-name mt-2 ps-2">
-                        <h6 class="pe-4" style="font-size: 18px; font-weight: 400; width: 100px;">Tushar B</h6>
-
-                    </div>
-                    <div class="profile-arrow mt-1">
-                        <!-- <button type="button" class="btn border fw-normal fs-6 dropdown-toggle"
-                            data-bs-toggle="dropdown">
-                            Monthly
-                        </button> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" dropdown-toggle data-bs-toggle="dropdown" width="18" height="18" fill="#000000"
-                            class="bi bi-chevron-down" style="margin-right: 50px;" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                        <ul class="dropdown-menu" style="width: 200px;">
-                            <li><h5 style="margin-left: 15px; margin-top: 10px;">Tushar B</h5></li>
-                            <li><h6 style="color: #667085; font-weight: 400; margin-top: -10px; margin-left: 20px;">tushar@builint.com</h6></li>
-                            <hr>
-                            <li><a class="dropdown-item" style="margin-top: -10px; margin-bottom: -10px;" href="#">Settings</a></li><hr>
-                            <li><a class="dropdown-item" style="margin-top: -10px; margin-bottom: -10px;" href="#">Help</a></li><hr>
-                            <li><a class="dropdown-item" style="margin-top: -10px;" href="#">Log out</a></li>
-                        </ul>
-                    </div>
-                    <!-- <div class="profile-arrow mt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#000000"
-                            class="bi bi-chevron-down" style="margin-right: 50px;" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                    </div> -->
-
                 </div>
                 <!-- dashboard -->
                 <div class="d-flex justify-content-between mt-4">
                     <h2 class="ms-4">Dashboard</h2>
                     <div class="dropdown me-4">
                         <button type="button" class="btn border fw-normal fs-6 dropdown-toggle"
-                            data-bs-toggle="dropdown">
-                            Monthly
-                        </button>
+                            data-bs-toggle="dropdown">Monthly</button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Daily</a></li>
                             <li><a class="dropdown-item" href="#">Weekly</a></li>
@@ -217,477 +219,18 @@
                         </ul>
                     </div>
                 </div>
-
-
-                <div class="row d-flex">
-                    <div class="col-6 ps-4">
-                        <div class="row">
-                            <!-- Hours Allocation -->
-                            <div class="col-5 ms-3 border rounded-3 mt-3" style="width: 250px;">
-                                <div class="d-flex">
-                                    <h6 class="mt-2" style="font-size: 12px; font-weight: 500; color: #4D4D4D;">Hours
-                                        Allocation</h6>
-                                    <div class="dropdown" style="width: 10px; margin-left: 30px;">
-                                        <button type="button" class="btn dropdown-toggle pt-0 mt-1 p-0"
-                                            style="width: 70px; font-weight: 400; font-size: 12px; margin-left: 35px;"
-                                            data-bs-toggle="dropdown">
-                                            Weekly
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Daily</a></li>
-                                            <li><a class="dropdown-item" href="#">Monthly</a></li>
-                                            <li><a class="dropdown-item" href="#">Yearly</a></li>
-                                        </ul>
-                                    </div>
+                <div class="col-sm-12 mt-3 d-flex">
+                    <div class="col-sm-5 d-flex">
+                        <!-- Hours Allocation -->
+                        <div class="col-sm-5 border rounded-3 ms-4">
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-7 hours-allocation">
+                                    <h6 class="mt-2 ps-2">Hours Allocation</h6>
                                 </div>
-                                <div>
-                                    <h2>400Hrs</h2>
-                                </div>
-                                <div class="chart d-flex">
-                                    <div class="chart_left">
-                                        <div class="d-flex" style="width: 145px;">
-                                            <span class="rounded-pill mt-4" style="width:20px; background-color: #004CFF;  display: inline-block; height: 10px;
-                                            margin: 2px;"></span>
-                                            <h6 class="ms-1" style="margin-top: 19px;">62%</h6>
-                                            <h6
-                                                style="margin-top: 20px; margin-left: 5px; font-size: 14px; color: rgba(0, 0, 0, 0.70);;">
-                                                Billable</h6>
-                                        </div>
-                                        <div class="d-flex" style="margin-top: -42px;">
-                                            <span class="rounded-pill mt-5" style="width:20px; background-color: #E5E5E5;  display: inline-block; height: 10px;
-                                            margin: 2px;"></span>
-                                            <h6 class="ms-1" style="margin-top: 42px;">23%</h6>
-                                            <h6
-                                                style="margin-top: 43px; margin-left: 5px; font-size: 14px; color: rgba(0, 0, 0, 0.70);;">
-                                                Others</h6>
-                                        </div>
-                                        <div class="d-flex" style="margin-top: -42px;">
-                                            <span class="rounded-pill mt-5" style="width:20px; background-color: rgba(0, 76, 255, 0.46);  display: inline-block; height: 10px;
-                                            margin: 2px;"></span>
-                                            <h6 class="ms-1" style="margin-top: 42px;">15%</h6>
-                                            <h6
-                                                style="margin-top: 43px; margin-left: 5px; font-size: 14px; color: rgba(0, 0, 0, 0.70);;">
-                                                Non-Billable</h6>
-                                        </div>
-                                    </div>
-                                    <div class="chart_right" style="margin-top: -45px;">
-                                        <svg class="mt-5" xmlns="http://www.w3.org/2000/svg" width="80" height="80"
-                                            viewBox="0 0 119 119" fill="none">
-                                            <mask id="path-1-inside-1_370_4318" fill="white">
-                                                <path
-                                                    d="M59.0165 5C59.0165 2.23858 61.2591 -0.0220007 64.0106 0.211676C71.9818 0.888643 79.7506 3.18104 86.8365 6.96856C95.3958 11.5436 102.695 18.1589 108.087 26.2286C113.479 34.2982 116.797 43.5731 117.749 53.2316C118.7 62.8902 117.254 72.6343 113.54 81.6008C109.826 90.5673 103.958 98.4794 96.456 104.636C88.9537 110.793 80.0488 115.005 70.53 116.898C61.0112 118.792 51.1724 118.309 41.885 115.491C34.1963 113.159 27.082 109.287 20.9668 104.129C18.8559 102.348 18.8686 99.1641 20.8212 97.2115L34.6156 83.4172C36.5682 81.4645 39.7146 81.5061 41.9686 83.1015C44.5459 84.9257 47.4084 86.3309 50.4507 87.2537C55.0944 88.6624 60.0138 88.9041 64.7732 87.9574C69.5326 87.0107 73.9851 84.9048 77.7362 81.8263C81.4874 78.7478 84.4214 74.7917 86.2784 70.3085C88.1354 65.8252 88.8581 60.9532 88.3825 56.1239C87.9069 51.2947 86.2476 46.6572 83.5516 42.6224C80.8556 38.5876 77.2061 35.2799 72.9265 32.9924C70.1227 31.4937 67.105 30.4632 63.9926 29.9307C61.2708 29.465 59.0165 27.2695 59.0165 24.5081V5Z" />
-                                            </mask>
-                                            <path
-                                                d="M59.0165 5C59.0165 2.23858 61.2591 -0.0220007 64.0106 0.211676C71.9818 0.888643 79.7506 3.18104 86.8365 6.96856C95.3958 11.5436 102.695 18.1589 108.087 26.2286C113.479 34.2982 116.797 43.5731 117.749 53.2316C118.7 62.8902 117.254 72.6343 113.54 81.6008C109.826 90.5673 103.958 98.4794 96.456 104.636C88.9537 110.793 80.0488 115.005 70.53 116.898C61.0112 118.792 51.1724 118.309 41.885 115.491C34.1963 113.159 27.082 109.287 20.9668 104.129C18.8559 102.348 18.8686 99.1641 20.8212 97.2115L34.6156 83.4172C36.5682 81.4645 39.7146 81.5061 41.9686 83.1015C44.5459 84.9257 47.4084 86.3309 50.4507 87.2537C55.0944 88.6624 60.0138 88.9041 64.7732 87.9574C69.5326 87.0107 73.9851 84.9048 77.7362 81.8263C81.4874 78.7478 84.4214 74.7917 86.2784 70.3085C88.1354 65.8252 88.8581 60.9532 88.3825 56.1239C87.9069 51.2947 86.2476 46.6572 83.5516 42.6224C80.8556 38.5876 77.2061 35.2799 72.9265 32.9924C70.1227 31.4937 67.105 30.4632 63.9926 29.9307C61.2708 29.465 59.0165 27.2695 59.0165 24.5081V5Z"
-                                                fill="#014DFF" stroke="white" stroke-width="4"
-                                                mask="url(#path-1-inside-1_370_4318)" />
-                                            <g opacity="0.5">
-                                                <mask id="path-2-inside-2_370_4318" fill="white">
-                                                    <path
-                                                        d="M5.12482 55.3499C2.36977 55.1624 0.266623 52.7713 0.686467 50.042C2.67776 37.097 8.93109 25.1284 18.529 16.0783C28.1269 7.02818 40.4419 1.48817 53.4814 0.26016C56.2307 0.00124876 58.4943 2.24112 58.5197 5.00242L58.6991 24.5097C58.7245 27.271 56.4904 29.4871 53.7729 29.9778C48.1799 30.9878 42.9593 33.5997 38.7727 37.5473C34.5861 41.495 31.6723 46.5532 30.3358 52.0773C29.6864 54.7613 27.343 56.8615 24.5879 56.674L5.12482 55.3499Z" />
-                                                </mask>
-                                                <path
-                                                    d="M5.12482 55.3499C2.36977 55.1624 0.266623 52.7713 0.686467 50.042C2.67776 37.097 8.93109 25.1284 18.529 16.0783C28.1269 7.02818 40.4419 1.48817 53.4814 0.26016C56.2307 0.00124876 58.4943 2.24112 58.5197 5.00242L58.6991 24.5097C58.7245 27.271 56.4904 29.4871 53.7729 29.9778C48.1799 30.9878 42.9593 33.5997 38.7727 37.5473C34.5861 41.495 31.6723 46.5532 30.3358 52.0773C29.6864 54.7613 27.343 56.8615 24.5879 56.674L5.12482 55.3499Z"
-                                                    fill="black" fill-opacity="0.2" stroke="white" stroke-width="4"
-                                                    mask="url(#path-2-inside-2_370_4318)" />
-                                            </g>
-                                            <g opacity="0.8">
-                                                <mask id="path-3-inside-3_370_4318" fill="white">
-                                                    <path
-                                                        d="M20.821 97.2116C18.8684 99.1642 15.6842 99.177 13.9038 97.0661C9.56661 91.9239 6.13239 86.0681 3.76078 79.7468C1.38917 73.4255 0.124211 66.7559 0.00869495 60.0298C-0.0387291 57.2688 2.36806 55.1839 5.12319 55.3703L24.5868 56.6871C27.3419 56.8735 29.3803 59.2708 29.6612 62.0179C29.918 64.5296 30.4968 67.0048 31.3885 69.3816C32.2802 71.7584 33.4724 74.0035 34.931 76.0643C36.5264 78.3182 36.5679 81.4647 34.6153 83.4173L20.821 97.2116Z" />
-                                                </mask>
-                                                <path
-                                                    d="M20.821 97.2116C18.8684 99.1642 15.6842 99.177 13.9038 97.0661C9.56661 91.9239 6.13239 86.0681 3.76078 79.7468C1.38917 73.4255 0.124211 66.7559 0.00869495 60.0298C-0.0387291 57.2688 2.36806 55.1839 5.12319 55.3703L24.5868 56.6871C27.3419 56.8735 29.3803 59.2708 29.6612 62.0179C29.918 64.5296 30.4968 67.0048 31.3885 69.3816C32.2802 71.7584 33.4724 74.0035 34.931 76.0643C36.5264 78.3182 36.5679 81.4647 34.6153 83.4173L20.821 97.2116Z"
-                                                    fill="#014DFF" fill-opacity="0.4" stroke="white" stroke-width="4"
-                                                    mask="url(#path-3-inside-3_370_4318)" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Employee Ultilisation -->
-                            <div class="col-5 border rounded-3 mt-3" style="width: 250px; margin-left:50px ;">
-                                <div class="d-flex">
-                                    <h6 class="mt-2" style="font-size: 12px; font-weight: 500; color: #4D4D4D;">Employee
-                                        Utilisation</h6>
-                                    <div class="dropdown" style="width: 10px; margin-left: 30px;">
-                                        <button type="button" class="btn dropdown-toggle pt-0 mt-1 p-0"
-                                            style="width: 70px; font-weight: 400; font-size: 12px; margin-left: 15px;"
-                                            data-bs-toggle="dropdown">
-                                            Weekly
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Daily</a></li>
-                                            <li><a class="dropdown-item" href="#">Monthly</a></li>
-                                            <li><a class="dropdown-item" href="#">Yearly</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>66</h2>
-                                </div>
-                                <div class="chart d-flex">
-                                    <div class="chart_left">
-                                        <div class="d-flex" style="width: 145px;">
-                                            <span class="rounded-pill mt-4" style="width:20px; background-color: #004CFF;  display: inline-block; height: 10px;
-                                            margin: 2px;"></span>
-                                            <h6 class="ms-1" style="margin-top: 19px;">62%</h6>
-                                            <h6
-                                                style="margin-top: 20px; margin-left: 5px; font-size: 14px; color: rgba(0, 0, 0, 0.70);;">
-                                                Billable</h6>
-                                        </div>
-                                        <div class="d-flex" style="margin-top: -42px;">
-                                            <span class="rounded-pill mt-5" style="width:20px; background-color: rgba(0, 76, 255, 0.46);  display: inline-block; height: 10px;
-                                            margin: 2px;"></span>
-                                            <h6 class="ms-1" style="margin-top: 42px;">38%</h6>
-                                            <h6
-                                                style="margin-top: 43px; margin-left: 5px; font-size: 14px; color: rgba(0, 0, 0, 0.70);;">
-                                                Non-Billable</h6>
-                                        </div>
-                                    </div>
-                                    <div class="chart_right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
-                                            viewBox="0 0 119 119" fill="none">
-                                            <g opacity="0.4">
-                                                <mask id="path-1-inside-1_370_4334" fill="white">
-                                                    <path
-                                                        d="M60.5153 5.0208C60.5919 2.26044 62.8965 0.0629462 65.6405 0.372863C75.756 1.51536 85.4349 5.2596 93.7152 11.2781C103.348 18.2795 110.637 28.031 114.625 39.2514C118.613 50.4719 119.113 62.6363 116.061 74.1464C113.436 84.0408 108.292 93.0537 101.166 100.324C99.2335 102.296 96.059 102.046 94.2574 99.9535L81.5301 85.169C79.7285 83.0762 80.0046 79.9416 81.7636 77.8128C84.4641 74.5447 86.4417 70.717 87.5386 66.5814C89.065 60.8263 88.8148 54.7441 86.8207 49.1339C84.8267 43.5237 81.1821 38.6479 76.3659 35.1472C72.9049 32.6316 68.9552 30.9107 64.7979 30.08C62.09 29.539 59.8974 27.2818 59.9741 24.5215L60.5153 5.0208Z" />
-                                                </mask>
-                                                <path
-                                                    d="M60.5153 5.0208C60.5919 2.26044 62.8965 0.0629462 65.6405 0.372863C75.756 1.51536 85.4349 5.2596 93.7152 11.2781C103.348 18.2795 110.637 28.031 114.625 39.2514C118.613 50.4719 119.113 62.6363 116.061 74.1464C113.436 84.0408 108.292 93.0537 101.166 100.324C99.2335 102.296 96.059 102.046 94.2574 99.9535L81.5301 85.169C79.7285 83.0762 80.0046 79.9416 81.7636 77.8128C84.4641 74.5447 86.4417 70.717 87.5386 66.5814C89.065 60.8263 88.8148 54.7441 86.8207 49.1339C84.8267 43.5237 81.1821 38.6479 76.3659 35.1472C72.9049 32.6316 68.9552 30.9107 64.7979 30.08C62.09 29.539 59.8974 27.2818 59.9741 24.5215L60.5153 5.0208Z"
-                                                    fill="#00B71E" stroke="white" stroke-width="4"
-                                                    mask="url(#path-1-inside-1_370_4334)" />
-                                            </g>
-                                            <mask id="path-2-inside-2_370_4334" fill="white">
-                                                <path
-                                                    d="M94.0392 100.14C95.8296 102.243 95.588 105.418 93.3417 107.024C86.9474 111.596 79.6896 114.854 71.9884 116.59C62.6576 118.692 52.9557 118.495 43.7179 116.015C34.4801 113.536 25.9834 108.849 18.9593 102.357C11.9353 95.8646 6.5943 87.7627 3.39637 78.7484C0.198437 69.7342 -0.760653 60.0777 0.60169 50.6105C1.96403 41.1433 5.60697 32.1491 11.2168 24.4023C16.8267 16.6555 24.2354 10.3883 32.805 6.14025C39.8779 2.63415 47.5666 0.590234 55.4126 0.110247C58.1688 -0.0583777 60.3574 2.25454 60.2922 5.01519L59.8314 24.5179C59.7662 27.2786 57.4607 29.4202 54.7286 29.8215C51.6729 30.2703 48.6963 31.1975 45.9107 32.5784C41.6259 34.7024 37.9215 37.836 35.1166 41.7094C32.3117 45.5828 30.4902 50.0799 29.809 54.8135C29.1279 59.5471 29.6074 64.3753 31.2064 68.8825C32.8053 73.3896 35.4758 77.4405 38.9878 80.6865C42.4999 83.9325 46.7482 86.2763 51.3671 87.516C55.986 88.7557 60.837 88.8542 65.5024 87.803C68.5354 87.1196 71.4309 85.9636 74.0862 84.3864C76.4604 82.9761 79.6001 83.186 81.3906 85.2883L94.0392 100.14Z" />
-                                            </mask>
-                                            <path
-                                                d="M94.0392 100.14C95.8296 102.243 95.588 105.418 93.3417 107.024C86.9474 111.596 79.6896 114.854 71.9884 116.59C62.6576 118.692 52.9557 118.495 43.7179 116.015C34.4801 113.536 25.9834 108.849 18.9593 102.357C11.9353 95.8646 6.5943 87.7627 3.39637 78.7484C0.198437 69.7342 -0.760653 60.0777 0.60169 50.6105C1.96403 41.1433 5.60697 32.1491 11.2168 24.4023C16.8267 16.6555 24.2354 10.3883 32.805 6.14025C39.8779 2.63415 47.5666 0.590234 55.4126 0.110247C58.1688 -0.0583777 60.3574 2.25454 60.2922 5.01519L59.8314 24.5179C59.7662 27.2786 57.4607 29.4202 54.7286 29.8215C51.6729 30.2703 48.6963 31.1975 45.9107 32.5784C41.6259 34.7024 37.9215 37.836 35.1166 41.7094C32.3117 45.5828 30.4902 50.0799 29.809 54.8135C29.1279 59.5471 29.6074 64.3753 31.2064 68.8825C32.8053 73.3896 35.4758 77.4405 38.9878 80.6865C42.4999 83.9325 46.7482 86.2763 51.3671 87.516C55.986 88.7557 60.837 88.8542 65.5024 87.803C68.5354 87.1196 71.4309 85.9636 74.0862 84.3864C76.4604 82.9761 79.6001 83.186 81.3906 85.2883L94.0392 100.14Z"
-                                                fill="#00B71E" stroke="white" stroke-width="4"
-                                                mask="url(#path-2-inside-2_370_4334)" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5" style="margin-left: -80px; width: 710px; height: 100px;">
-
-                        <div class="row">
-                            <!-- No of clients -->
-                            <div class="col-3 border rounded-3"
-                                style="margin-left: 100px; height: 90px; margin-top: 15px;">
-                                <h6 class="fw-normal pt-2" style="color: rgba(0, 0, 0, 0.70);">No.of Clients</h6>
-                                <div class="d-flex">
-                                    <div class="mt-2">
-                                        <h6 class="fs-3">05</h6>
-                                    </div>
-                                    <div style="margin-left: 70px; margin-top: -5px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                            viewBox="0 0 50 50" fill="none">
-                                            <g filter="url(#filter0_d_521_4016)">
-                                                <circle cx="20" cy="25" r="20" fill="#1755E7" />
-                                            </g>
-                                            <path
-                                                d="M23.5 16C21.0147 16 19 18.015 19 20.5C19 22.985 21.0147 25 23.5 25C25.9853 25 28 22.985 28 20.5C28 18.015 25.9853 16 23.5 16ZM16 17C13.7909 17 12 18.791 12 21C12 23.209 13.7909 25 16 25C16.8294 25 17.615 24.747 18.2812 24.281C18.7339 23.965 18.8476 23.328 18.5312 22.875C18.2148 22.422 17.6089 22.34 17.1562 22.656C16.8233 22.889 16.4162 23 16 23C14.8954 23 14 22.105 14 21C14 19.895 14.8954 19 16 19C16.3262 19 16.6246 19.072 16.9062 19.219C17.3962 19.474 18.0264 19.302 18.2812 18.812C18.5361 18.323 18.3337 17.692 17.8438 17.438C17.2787 17.144 16.6494 17 16 17ZM23.5 18C24.8807 18 26 19.119 26 20.5C26 21.881 24.8807 23 23.5 23C22.1193 23 21 21.881 21 20.5C21 19.119 22.1193 18 23.5 18ZM13.0625 26.344C11.2284 27.101 10 28.956 10 31V33C10 33.552 10.4477 34 11 34H15C15.5523 34 16 33.552 16 33C16 32.448 15.5523 32 15 32H12V31C12 29.876 12.6667 28.844 13.433 28.39C14.1537 28.694 14.9161 28.924 15.5941 28.981C16.1445 29.028 16.6408 28.613 16.6875 28.062C16.7342 27.512 16.3365 27.046 15.7862 26.999C15.3472 26.962 14.8674 26.83 14.3125 26.594C14.1785 26.537 14.1007 26.492 13.8438 26.375C13.5919 26.26 13.3183 26.238 13.0625 26.344ZM20.0625 26.344C18.2284 27.101 17 28.956 17 31V33C17 33.552 17.4477 34 18 34H29C29.5523 34 30 33.552 30 33V31C30 29.004 28.7648 27.194 26.9375 26.406C26.6803 26.295 26.3806 26.292 26.125 26.406C25.2402 26.803 24.3782 27 23.5 27C22.6248 27 21.7598 26.792 20.8438 26.375C20.5919 26.26 20.3183 26.238 20.0625 26.344ZM20.447 28.39C21.3918 28.748 22.5309 29 23.5 29C24.4615 29 25.5535 28.765 26.4792 28.423C27.3818 28.937 28 29.899 28 31V32H19V31C19 29.835 19.6559 28.853 20.447 28.39Z"
-                                                fill="white" />
-                                            <defs>
-                                                <filter id="filter0_d_521_4016" x="0" y="0" width="50" height="50"
-                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                        result="hardAlpha" />
-                                                    <feOffset dx="5" />
-                                                    <feGaussianBlur stdDeviation="2.5" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                                        result="effect1_dropShadow_521_4016" />
-                                                    <feBlend mode="normal" in="SourceGraphic"
-                                                        in2="effect1_dropShadow_521_4016" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- No of employee -->
-                            <div class="col-3 border rounded-3"
-                                style="margin-left: 25px; height: 90px; margin-top: 15px;">
-                                <h6 class="fw-normal pt-2" style="color: rgba(0, 0, 0, 0.70);">No.of Employee</h6>
-                                <div class="d-flex">
-                                    <div class="mt-2">
-                                        <h6 class="fs-3">66</h6>
-                                    </div>
-                                    <div style="margin-left: 70px; margin-top: -5px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                            viewBox="0 0 50 50" fill="none">
-                                            <g filter="url(#filter0_d_521_4021)">
-                                                <circle cx="20" cy="25" r="20" fill="#0EB85B" />
-                                            </g>
-                                            <path
-                                                d="M20 15C16.9412 15 14.4615 17.1269 14.4615 19.75C14.4615 22.3731 16.9412 24.5 20 24.5C23.0588 24.5 25.5385 22.3731 25.5385 19.75C25.5385 17.1269 23.0588 15 20 15ZM20 17.1111C21.6993 17.1111 23.0769 18.2923 23.0769 19.75C23.0769 21.2077 21.6993 22.3889 20 22.3889C18.3007 22.3889 16.9231 21.2077 16.9231 19.75C16.9231 18.2923 18.3007 17.1111 20 17.1111ZM15.7692 25.9187C13.5119 26.7177 12 28.6758 12 30.8333V32.9444C12 33.5271 12.551 34 13.2308 34H26.7692C27.449 34 28 33.5271 28 32.9444V30.8333C28 28.7264 26.4798 26.8159 24.2308 25.9841C23.9142 25.867 23.5454 25.8638 23.2308 25.9841C22.1418 26.4032 21.0809 26.6111 20 26.6111C18.9228 26.6111 17.8582 26.3916 16.7308 25.9514C16.4208 25.83 16.0841 25.8068 15.7692 25.9187ZM16.2425 28.0783C17.4053 28.4562 18.8073 28.7222 20 28.7222C21.1834 28.7222 22.5274 28.4741 23.6667 28.1131C24.7776 28.6557 25.5385 29.6712 25.5385 30.8333V31.8889H14.4615V30.8333C14.4615 29.6036 15.2688 28.5671 16.2425 28.0783Z"
-                                                fill="white" />
-                                            <defs>
-                                                <filter id="filter0_d_521_4021" x="0" y="0" width="50" height="50"
-                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                        result="hardAlpha" />
-                                                    <feOffset dx="5" />
-                                                    <feGaussianBlur stdDeviation="2.5" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                                        result="effect1_dropShadow_521_4021" />
-                                                    <feBlend mode="normal" in="SourceGraphic"
-                                                        in2="effect1_dropShadow_521_4021" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- No of projects -->
-                            <div class="col-3 border rounded-3"
-                                style="margin-left: 25px; height: 90px; margin-top: 15px;">
-                                <h6 class="fw-normal pt-2" style="color: rgba(0, 0, 0, 0.70);">No.of Projects</h6>
-                                <div class="d-flex">
-                                    <div class="mt-2">
-                                        <h6 class="fs-3">10</h6>
-                                    </div>
-                                    <div style="margin-left: 70px; margin-top: -5px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                            viewBox="0 0 50 50" fill="none">
-                                            <g filter="url(#filter0_d_521_4022)">
-                                                <circle cx="20" cy="25" r="20" fill="#A00EB8" />
-                                            </g>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M27.2 17H12.8C11.81 17 11 17.81 11 18.8V31.4C11 32.39 11.81 33.2 12.8 33.2H27.2C28.19 33.2 29 32.39 29 31.4V18.8C29 17.81 28.19 17 27.2 17ZM27.2 31.4H12.8V18.8H27.2V31.4Z"
-                                                fill="white" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M26.669 23.678L25.391 22.4L22.538 25.253L21.269 23.975L20 25.244L22.538 27.8L26.669 23.678Z"
-                                                fill="white" />
-                                            <path d="M18.2 20.6H13.7V22.4H18.2V20.6Z" fill="white" />
-                                            <path d="M18.2 24.2001H13.7V26.0001H18.2V24.2001Z" fill="white" />
-                                            <path d="M18.2 27.7999H13.7V29.5999H18.2V27.7999Z" fill="white" />
-                                            <defs>
-                                                <filter id="filter0_d_521_4022" x="0" y="0" width="50" height="50"
-                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                        result="hardAlpha" />
-                                                    <feOffset dx="5" />
-                                                    <feGaussianBlur stdDeviation="2.5" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                                        result="effect1_dropShadow_521_4022" />
-                                                    <feBlend mode="normal" in="SourceGraphic"
-                                                        in2="effect1_dropShadow_521_4022" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-3 bg-light m-3">hi</div>
-                            <div class="col-3 bg-primary m-3">hi</div> -->
-                        </div>
-                    </div>
-
-                </div>
-                <div class="d-flex">
-                    <!-- timesheet submission status -->
-                    <div class="col-6 mt-4 ms-3 border rounded-3" style="width: 585px">
-                        <div class=" col-12 d-flex">
-                            <div class="col-6 pt-3 ps-3">
-                                <h5>Timesheet Submission Status</h5>
-                            </div>
-                            <div class="col-3 ms-3 d-flex justify-content-end">
-                                <span class="rounded-pill mt-4"
-                                    style="width:20px; background-color: #E5E5E5;  display: inline-block; height: 10px; margin: 2px;"></span>
-                                <h6 style="margin-top: 20px; margin-left: 5px; font-size: 14px;">Actual
-                                </h6>
-                            </div>
-                            <div class="col-3 ps-2 d-flex ms-2">
-                                <span class="rounded-pill mt-4"
-                                    style="width:20px; background-color: #7000FF;  display: inline-block; height: 10px; margin: 2px;"></span>
-                                <h6 style="margin-top: 20px; margin-left: 5px; font-size: 14px;">Submitted
-                                </h6>
-                            </div>
-                        </div>
-                        <hr style="margin-left: 15px; width: 95%;">
-
-                        <!-- timesheet submission status chart -->
-                        <div class="col-12 d-flex ms-3 pt-2">
-                            <div class="col- chart_week ">
-                                <h6>4th week</h6>
-                                <h6>3rd week</h6>
-                                <h6>2nd week</h6>
-                                <h6>1st week</h6>
-                            </div>
-                            <div class="col-1 ms-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:20%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:40%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:40%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:70%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:50%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:60%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:100%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:80%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:50%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <div class="progress month" style="height:10px">
-                                    <div class="progress-bar" style="width:60%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 sub-status-month d-flex">
-                            <div class="col-2"></div>
-                            <div class="col-1">
-                                <h6>JAN</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>FEB</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>MAR</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>APR</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>MAY</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>JUN</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>JUL</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>AUG</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>SEP</h6>
-                            </div>
-                            <div class="col-1">
-                                <h6>OCT</h6>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Resource Billability -->
-                    <div class="col-6 border rounded-3" style="width: 605px; margin-top: -65px; margin-left: 30px;">
-                        <div class="col-12 pt-4 ps-3">
-                            <h5>Resource Billability (%)</h5>
-                        </div>
-                        <hr style="margin-left: 15px; width: 95%; margin-top: 20px;">
-                        <div class="col-12 d-flex ms-3 pt-2">
-                            <div class="col-1 chart_resource_percentage">
-                                <h6>100%</h6>
-                                <h6>80%</h6>
-                                <h6>60%</h6>
-                                <h6>40%</h6>
-                                <h6>0</h6>
-                            </div>
-                            <div class="col-11 mt-4">
-                                <img src="image/Line.png" alt="Resource chart">
-                            </div>
-                        </div>
-                        <div class="col-12 Resource-status-month d-flex">
-                            <!-- <div class="col-2"></div> -->
-                            <div class="col-11 Resource-status-month d-flex justify-content-between">
-                                <div class="col-1">
-                                    <h6>JAN</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>FEB</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>MAR</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>APR</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>MAY</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>JUN</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>JUL</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>AUG</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>SEP</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>OCT</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- our project card -->
-                <div class="col-11 d-flex">
-                    <div class="col-7 mt-3 ms-3 border rounded-3">
-                        <div class="col d-flex">
-                            <div class="col-10 ms-4 mt-3">
-                                <h5>Our Project</h5>
-                            </div>
-                            <div class="col-1  mt-2">
-                                <div class="dropdown">
-                                    <button type="button" class="btn dropdown-toggle"
-                                        data-bs-toggle="dropdown">Weekly</button>
+                                <div class="col-sm-5 hours-allocation-dropdown d-flex justify-content-end">
+                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2" data-bs-toggle="dropdown">
+                                        Weekly
+                                    </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Daily</a></li>
                                         <li><a class="dropdown-item" href="#">Monthly</a></li>
@@ -695,293 +238,130 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col mt-4 ms-4 d-flex">
-                            <div class="col-4 pe-2">
-                                <h6>project</h6>
+                            <div class="col-sm-12 mt-1 ps-2">
+                                <h2>400Hrs</h2>
                             </div>
-                            <div class="col-2 ms-5">
-                                <h6>members</h6>
-                            </div>
-                            <div class="col-3">
-                                <h6>Worked House</h6>
-                            </div>
-                            <div class="col-2">
-                                <h6>Completion</h6>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- shoppify -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-shopify.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Soft UI Shopify Version</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                                <img src="image/face-3.png" class=" rounded-circle" alt="">
-                                <img src="image/face-4.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">60%</h6>
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-6">
+                                    <div class="d-flex mt-1 hours-allocation-percentage">
+                                        <span class="rounded-pill ms-1"></span>
+                                        <h6 class="ms-1 pt-3">62%</h6>
+                                        <h5 class="pt-3 ps-2">Billable</h5>
+                                    </div>
+                                    <div class="d-flex hours-allocation-percentage-other">
+                                        <span class="rounded-pill ms-1"></span>
+                                        <h6 class="ms-1 pt-3">23%</h6>
+                                        <h5 class="pt-3 ps-2">Others</h5>
+                                    </div>
                                 </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:60%"></div>
+                                <div class="col-sm-6">
+                                    <svg class="mt-1 ms-1" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                        viewBox="0 0 119 119" fill="none">
+                                        <mask id="path-1-inside-1_370_4318" fill="white">
+                                            <path
+                                                d="M59.0165 5C59.0165 2.23858 61.2591 -0.0220007 64.0106 0.211676C71.9818 0.888643 79.7506 3.18104 86.8365 6.96856C95.3958 11.5436 102.695 18.1589 108.087 26.2286C113.479 34.2982 116.797 43.5731 117.749 53.2316C118.7 62.8902 117.254 72.6343 113.54 81.6008C109.826 90.5673 103.958 98.4794 96.456 104.636C88.9537 110.793 80.0488 115.005 70.53 116.898C61.0112 118.792 51.1724 118.309 41.885 115.491C34.1963 113.159 27.082 109.287 20.9668 104.129C18.8559 102.348 18.8686 99.1641 20.8212 97.2115L34.6156 83.4172C36.5682 81.4645 39.7146 81.5061 41.9686 83.1015C44.5459 84.9257 47.4084 86.3309 50.4507 87.2537C55.0944 88.6624 60.0138 88.9041 64.7732 87.9574C69.5326 87.0107 73.9851 84.9048 77.7362 81.8263C81.4874 78.7478 84.4214 74.7917 86.2784 70.3085C88.1354 65.8252 88.8581 60.9532 88.3825 56.1239C87.9069 51.2947 86.2476 46.6572 83.5516 42.6224C80.8556 38.5876 77.2061 35.2799 72.9265 32.9924C70.1227 31.4937 67.105 30.4632 63.9926 29.9307C61.2708 29.465 59.0165 27.2695 59.0165 24.5081V5Z" />
+                                        </mask>
+                                        <path
+                                            d="M59.0165 5C59.0165 2.23858 61.2591 -0.0220007 64.0106 0.211676C71.9818 0.888643 79.7506 3.18104 86.8365 6.96856C95.3958 11.5436 102.695 18.1589 108.087 26.2286C113.479 34.2982 116.797 43.5731 117.749 53.2316C118.7 62.8902 117.254 72.6343 113.54 81.6008C109.826 90.5673 103.958 98.4794 96.456 104.636C88.9537 110.793 80.0488 115.005 70.53 116.898C61.0112 118.792 51.1724 118.309 41.885 115.491C34.1963 113.159 27.082 109.287 20.9668 104.129C18.8559 102.348 18.8686 99.1641 20.8212 97.2115L34.6156 83.4172C36.5682 81.4645 39.7146 81.5061 41.9686 83.1015C44.5459 84.9257 47.4084 86.3309 50.4507 87.2537C55.0944 88.6624 60.0138 88.9041 64.7732 87.9574C69.5326 87.0107 73.9851 84.9048 77.7362 81.8263C81.4874 78.7478 84.4214 74.7917 86.2784 70.3085C88.1354 65.8252 88.8581 60.9532 88.3825 56.1239C87.9069 51.2947 86.2476 46.6572 83.5516 42.6224C80.8556 38.5876 77.2061 35.2799 72.9265 32.9924C70.1227 31.4937 67.105 30.4632 63.9926 29.9307C61.2708 29.465 59.0165 27.2695 59.0165 24.5081V5Z"
+                                            fill="#014DFF" stroke="white" stroke-width="4"
+                                            mask="url(#path-1-inside-1_370_4318)" />
+                                        <g opacity="0.5">
+                                            <mask id="path-2-inside-2_370_4318" fill="white">
+                                                <path
+                                                    d="M5.12482 55.3499C2.36977 55.1624 0.266623 52.7713 0.686467 50.042C2.67776 37.097 8.93109 25.1284 18.529 16.0783C28.1269 7.02818 40.4419 1.48817 53.4814 0.26016C56.2307 0.00124876 58.4943 2.24112 58.5197 5.00242L58.6991 24.5097C58.7245 27.271 56.4904 29.4871 53.7729 29.9778C48.1799 30.9878 42.9593 33.5997 38.7727 37.5473C34.5861 41.495 31.6723 46.5532 30.3358 52.0773C29.6864 54.7613 27.343 56.8615 24.5879 56.674L5.12482 55.3499Z" />
+                                            </mask>
+                                            <path
+                                                d="M5.12482 55.3499C2.36977 55.1624 0.266623 52.7713 0.686467 50.042C2.67776 37.097 8.93109 25.1284 18.529 16.0783C28.1269 7.02818 40.4419 1.48817 53.4814 0.26016C56.2307 0.00124876 58.4943 2.24112 58.5197 5.00242L58.6991 24.5097C58.7245 27.271 56.4904 29.4871 53.7729 29.9778C48.1799 30.9878 42.9593 33.5997 38.7727 37.5473C34.5861 41.495 31.6723 46.5532 30.3358 52.0773C29.6864 54.7613 27.343 56.8615 24.5879 56.674L5.12482 55.3499Z"
+                                                fill="black" fill-opacity="0.2" stroke="white" stroke-width="4"
+                                                mask="url(#path-2-inside-2_370_4318)" />
+                                        </g>
+                                        <g opacity="0.8">
+                                            <mask id="path-3-inside-3_370_4318" fill="white">
+                                                <path
+                                                    d="M20.821 97.2116C18.8684 99.1642 15.6842 99.177 13.9038 97.0661C9.56661 91.9239 6.13239 86.0681 3.76078 79.7468C1.38917 73.4255 0.124211 66.7559 0.00869495 60.0298C-0.0387291 57.2688 2.36806 55.1839 5.12319 55.3703L24.5868 56.6871C27.3419 56.8735 29.3803 59.2708 29.6612 62.0179C29.918 64.5296 30.4968 67.0048 31.3885 69.3816C32.2802 71.7584 33.4724 74.0035 34.931 76.0643C36.5264 78.3182 36.5679 81.4647 34.6153 83.4173L20.821 97.2116Z" />
+                                            </mask>
+                                            <path
+                                                d="M20.821 97.2116C18.8684 99.1642 15.6842 99.177 13.9038 97.0661C9.56661 91.9239 6.13239 86.0681 3.76078 79.7468C1.38917 73.4255 0.124211 66.7559 0.00869495 60.0298C-0.0387291 57.2688 2.36806 55.1839 5.12319 55.3703L24.5868 56.6871C27.3419 56.8735 29.3803 59.2708 29.6612 62.0179C29.918 64.5296 30.4968 67.0048 31.3885 69.3816C32.2802 71.7584 33.4724 74.0035 34.931 76.0643C36.5264 78.3182 36.5679 81.4647 34.6153 83.4173L20.821 97.2116Z"
+                                                fill="#014DFF" fill-opacity="0.4" stroke="white" stroke-width="4"
+                                                mask="url(#path-3-inside-3_370_4318)" />
+                                        </g>
+                                    </svg>
                                 </div>
                             </div>
-
-                        </div>
-                        <hr>
-                        <!-- Atlassian -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-atlassian.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Progress Track</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">10%</h6>
-                                </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:10%"></div>
-                                </div>
+                            <div class="d-flex hours-allocation-percentage-nonbillable">
+                                <span class="rounded-pill ms-1"></span>
+                                <h6 class="ms-1 ">15%</h6>
+                                <h5 class="ps-2">Non-Billable</h5>
                             </div>
                         </div>
-                        <hr>
-                        <!-- Slack -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-slack.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Fix Platform Errors</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                                <img src="image/face-3.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">100%</h6>
+                        <!-- Employee Utilisation -->
+                        <div class="col-sm-5 border rounded-3 ms-4">
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-8 hours-allocation">
+                                    <h6 class="mt-2 ps-2">Employee Utilisation</h6>
                                 </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:100%; background-color: #52C41A;"></div>
+                                <div class="col-sm-4 hours-allocation-dropdown d-flex justify-content-end">
+                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2" data-bs-toggle="dropdown">
+                                        Weekly
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Daily</a></li>
+                                        <li><a class="dropdown-item" href="#">Monthly</a></li>
+                                        <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                    </ul>
                                 </div>
+                            </div>
+                            <div class="col-sm-12 ps-2">
+                                <h2>66Hrs</h2>
+                            </div>
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-6"><div class="d-flex employee-utilisation-percentage-other">
+                                        <span class="rounded-pill ms-1"></span>
+                                        <h6 class="ms-1">62%</h6>
+                                        <h5 class="ps-2">Billable</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <svg class="mt-1 ms-2" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                        viewBox="0 0 119 119" fill="none">
+                                        <g opacity="0.4">
+                                            <mask id="path-1-inside-1_370_4334" fill="white">
+                                                <path
+                                                    d="M60.5153 5.0208C60.5919 2.26044 62.8965 0.0629462 65.6405 0.372863C75.756 1.51536 85.4349 5.2596 93.7152 11.2781C103.348 18.2795 110.637 28.031 114.625 39.2514C118.613 50.4719 119.113 62.6363 116.061 74.1464C113.436 84.0408 108.292 93.0537 101.166 100.324C99.2335 102.296 96.059 102.046 94.2574 99.9535L81.5301 85.169C79.7285 83.0762 80.0046 79.9416 81.7636 77.8128C84.4641 74.5447 86.4417 70.717 87.5386 66.5814C89.065 60.8263 88.8148 54.7441 86.8207 49.1339C84.8267 43.5237 81.1821 38.6479 76.3659 35.1472C72.9049 32.6316 68.9552 30.9107 64.7979 30.08C62.09 29.539 59.8974 27.2818 59.9741 24.5215L60.5153 5.0208Z" />
+                                            </mask>
+                                            <path
+                                                d="M60.5153 5.0208C60.5919 2.26044 62.8965 0.0629462 65.6405 0.372863C75.756 1.51536 85.4349 5.2596 93.7152 11.2781C103.348 18.2795 110.637 28.031 114.625 39.2514C118.613 50.4719 119.113 62.6363 116.061 74.1464C113.436 84.0408 108.292 93.0537 101.166 100.324C99.2335 102.296 96.059 102.046 94.2574 99.9535L81.5301 85.169C79.7285 83.0762 80.0046 79.9416 81.7636 77.8128C84.4641 74.5447 86.4417 70.717 87.5386 66.5814C89.065 60.8263 88.8148 54.7441 86.8207 49.1339C84.8267 43.5237 81.1821 38.6479 76.3659 35.1472C72.9049 32.6316 68.9552 30.9107 64.7979 30.08C62.09 29.539 59.8974 27.2818 59.9741 24.5215L60.5153 5.0208Z"
+                                                fill="#00B71E" stroke="white" stroke-width="4"
+                                                mask="url(#path-1-inside-1_370_4334)" />
+                                        </g>
+                                        <mask id="path-2-inside-2_370_4334" fill="white">
+                                            <path
+                                                d="M94.0392 100.14C95.8296 102.243 95.588 105.418 93.3417 107.024C86.9474 111.596 79.6896 114.854 71.9884 116.59C62.6576 118.692 52.9557 118.495 43.7179 116.015C34.4801 113.536 25.9834 108.849 18.9593 102.357C11.9353 95.8646 6.5943 87.7627 3.39637 78.7484C0.198437 69.7342 -0.760653 60.0777 0.60169 50.6105C1.96403 41.1433 5.60697 32.1491 11.2168 24.4023C16.8267 16.6555 24.2354 10.3883 32.805 6.14025C39.8779 2.63415 47.5666 0.590234 55.4126 0.110247C58.1688 -0.0583777 60.3574 2.25454 60.2922 5.01519L59.8314 24.5179C59.7662 27.2786 57.4607 29.4202 54.7286 29.8215C51.6729 30.2703 48.6963 31.1975 45.9107 32.5784C41.6259 34.7024 37.9215 37.836 35.1166 41.7094C32.3117 45.5828 30.4902 50.0799 29.809 54.8135C29.1279 59.5471 29.6074 64.3753 31.2064 68.8825C32.8053 73.3896 35.4758 77.4405 38.9878 80.6865C42.4999 83.9325 46.7482 86.2763 51.3671 87.516C55.986 88.7557 60.837 88.8542 65.5024 87.803C68.5354 87.1196 71.4309 85.9636 74.0862 84.3864C76.4604 82.9761 79.6001 83.186 81.3906 85.2883L94.0392 100.14Z" />
+                                        </mask>
+                                        <path
+                                            d="M94.0392 100.14C95.8296 102.243 95.588 105.418 93.3417 107.024C86.9474 111.596 79.6896 114.854 71.9884 116.59C62.6576 118.692 52.9557 118.495 43.7179 116.015C34.4801 113.536 25.9834 108.849 18.9593 102.357C11.9353 95.8646 6.5943 87.7627 3.39637 78.7484C0.198437 69.7342 -0.760653 60.0777 0.60169 50.6105C1.96403 41.1433 5.60697 32.1491 11.2168 24.4023C16.8267 16.6555 24.2354 10.3883 32.805 6.14025C39.8779 2.63415 47.5666 0.590234 55.4126 0.110247C58.1688 -0.0583777 60.3574 2.25454 60.2922 5.01519L59.8314 24.5179C59.7662 27.2786 57.4607 29.4202 54.7286 29.8215C51.6729 30.2703 48.6963 31.1975 45.9107 32.5784C41.6259 34.7024 37.9215 37.836 35.1166 41.7094C32.3117 45.5828 30.4902 50.0799 29.809 54.8135C29.1279 59.5471 29.6074 64.3753 31.2064 68.8825C32.8053 73.3896 35.4758 77.4405 38.9878 80.6865C42.4999 83.9325 46.7482 86.2763 51.3671 87.516C55.986 88.7557 60.837 88.8542 65.5024 87.803C68.5354 87.1196 71.4309 85.9636 74.0862 84.3864C76.4604 82.9761 79.6001 83.186 81.3906 85.2883L94.0392 100.14Z"
+                                            fill="#00B71E" stroke="white" stroke-width="4"
+                                            mask="url(#path-2-inside-2_370_4334)"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex employee-utilisation-percentage-nonbillable">
+                                <span class="rounded-pill ms-1"></span>
+                                <h6 class="ms-1 ">15%</h6>
+                                <h5 class="ps-2">Non-Billable</h5>
                             </div>
                         </div>
-                        <hr>
-                        <!-- spotify -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-spotify.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Launch new Mobile App</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">100%</h6>
-                                </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:100%; background-color: #52C41A;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- jira -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-jira.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Add the New Landing Page</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                                <img src="image/face-3.png" class=" rounded-circle" alt="">
-                                <img src="image/face-4.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">80%</h6>
-                                </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- invision -->
-                        <div class="col d-flex">
-                            <div class="col-1 ms-3">
-                                <img src="image/logo-invision.png" alt="">
-                            </div>
-                            <div class="col-4 mt-1 shopify">
-                                <h6>Redesign Online Store</h6>
-                            </div>
-                            <div class="col-2" style="margin-left:-5px;">
-                                <img src="image/face-1.png" class=" rounded-circle" alt="">
-                                <img src="image/face-2.png" class=" rounded-circle" alt="">
-                                <img src="image/face-3.png" class=" rounded-circle" alt="">
-                            </div>
-                            <div class="col-2 face">
-                                <h6>32:00 h</h6>
-                            </div>
-                            <div class="col-2" style="margin-left: 40px;">
-                                <div>
-                                    <h6 style="color: #67748E;">cancel</h6>
-                                </div>
-                                <div class="progress completion" style="height: 5px;">
-                                    <div class="progress-bar" style="width:100%; background-color: #F5222D;"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <!-- our client card -->
-                    <div class="col-5 mt-3 ms-4 border rounded-3">
-                        <div class="col-10 ms-4 mt-3">
-                            <h5>Our Clients</h5>
-                        </div>
-                        <!-- amazon -->
-                        <div class="col-11 d-flex ms-4 mt-5">
-                            <div class="col-1">
-                                <img src="image/amazon-icon-1 1.svg" alt="amazon">
-                            </div>
-                            <div class="col-10">
-                                <h6>Amazon.com, Inc.<br>AMZN</h6>
-                            </div>
-                            <div class="col-1">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
-                                        fill="none">
-                                        <path
-                                            d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
-                                            fill="#747474" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- coca cola -->
-                        <div class="col-11 d-flex ms-4 mt-4">
-                            <div class="col-1">
-                                <img src="image/coca-cola-6 1.svg" alt="amazon">
-                            </div>
-                            <div class="col-10">
-                                <h6>Coca-Cola Co<br> KO</h6>
-                            </div>
-                            <div class="col-1">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
-                                        fill="none">
-                                        <path
-                                            d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
-                                            fill="#747474" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- BMW -->
-                        <div class="col-11 d-flex ms-4 mt-4">
-                            <div class="col-1">
-                                <img src="image/bmw 1.svg" alt="amazon">
-                            </div>
-                            <div class="col-10">
-                                <h6>Bayerische Motoren Werke AG<br> BMW</h6>
-                            </div>
-                            <div class="col-1">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
-                                        fill="none">
-                                        <path
-                                            d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
-                                            fill="#747474" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- microsoft -->
-                        <div class="col-11 d-flex ms-4 mt-4">
-                            <div class="col-1">
-                                <img src="image/microsoft 1.svg" alt="amazon">
-                            </div>
-                            <div class="col-10">
-                                <h6>Microsoft Corp<br> MSFT</h6>
-                            </div>
-                            <div class="col-1">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
-                                        fill="none">
-                                        <path
-                                            d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
-                                            fill="#747474" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- UPS -->
-                        <div class="col-11 d-flex ms-4 mt-4">
-                            <div class="col-1">
-                                <img src="image/ups 1.svg" alt="amazon">
-                            </div>
-                            <div class="col-10">
-                                <h6>United Parcel Service,<br> Inc. UPS</h6>
-                            </div>
-                            <div class="col-1">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
-                                        fill="none">
-                                        <path
-                                            d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
-                                            fill="#747474"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-sm-7 bg-primary">welcome</div>
                 </div>
-             </div>
+
+
+            </div>
         </div>
-    </div>
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
 </body>
 
 </html>
