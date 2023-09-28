@@ -103,6 +103,11 @@ body,html{
     font-size: 14px;
     color: #878686;
 }
+.no-of-client>h6{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 14px;
+    font-weight: 500;
+}
 .chart_week>h6{
     color: #838383;
     font-size: 14px;
