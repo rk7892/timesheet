@@ -162,28 +162,50 @@
                                 <div class="col-lg-3 col-sm-12">
                                     <form>
                                         <div class="form-grp ">
-                                            <label for="name" class="form-label">Project Name</label>
+                                            <label for="name" class="form-label">Select Client</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="project name" id="name"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="Select Client" id="name">
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li class="mt-1 ms-2">
+                                                        <div
+                                                            class="d-flex justify-content-between align-item-center text-muted">
+                                                            <p>search</p>
+                                                            <p> <span class="material-symbols-outlined">
+                                                                    search
+                                                                </span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1 ms-2">
+                                                        <hr class="dropdown-divider mb-2 ms-0">
+                                                        <a href="dropdown-item" class="text-muted">SMRT
+                                                        </a>
+                                                    </li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"> Hitachi</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">
+                                                            TATA</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">BuildINT</a></li>
+
+
+                                                </ul>
+                                            </div>
+
+
                                         </div>
                                     </form>
 
                                 </div>
-
-
 
                                 <div class="col-lg-3 col-sm-12 ">
                                     <form>
                                         <div class="form-grp ">
                                             <label for="name" class="form-label">Project Name</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="project name" id="name"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="project name" id="name">
                                         </div>
 
                                     </form>
@@ -193,10 +215,23 @@
                                         <div class="form-grp ">
                                             <label for="Status" class="form-label">Status</label>
                                             <input type="client" class="form-control form-control-lg fs-6"
-                                                placeholder="Active" id="status"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="Active" id="status">
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Active</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"> InActive</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Hold</a></li>
+
+
+                                                </ul>
+
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -206,10 +241,25 @@
                                             <label for="Client" class="form-label">Select project Manager</label>
                                             <input type="project"
                                                 class="form-control form-control-lg fs-6 position-relative"
-                                                placeholder="tushar B" id="client"><span
-                                                class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                                placeholder="tushar B" id="client">
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Tushar B</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item">Arun</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Raj kumar</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Suprith Kumar</a></li>
+
+
+                                                </ul>
+
+                                            </div>
                                         </div>
 
                                     </form>
@@ -224,15 +274,32 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="billable" id="billable">
-                                            <span class="material-symbols-outlined position-absolute">
-                                                expand_more
-                                            </span>
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Billable</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"> Non Billable</a>
+                                                    </li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Admin</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Training</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-primary ">+ Add New Project</a></li>
+
+
+                                                </ul>
+
+                                            </div>
+
                                         </div>
                                     </form>
 
                                 </div>
-
-
 
                                 <div class="col-lg-3 col-sm-12 ">
                                     <form>
@@ -241,10 +308,10 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="12/07/2023" id="date">
-                                            <span class="material-symbols-outlined position-absolute"
-                                                style="color: #9B9B9B;">
-                                                calendar_month
-                                            </span>
+                                            <a href="#"> <span class="material-symbols-outlined position-absolute"
+                                                    style="color: #9B9B9B;margin-top: -35px;margin-left: 200px;">
+                                                    calendar_month
+                                                </span></a>
 
                                         </div>
 
@@ -257,11 +324,11 @@
                                             <input type="text"
                                                 class="form-control form-control-lg fs-6 position-relative"
                                                 placeholder="12/07/2023" id="end date">
-                                            <span class="material-symbols-outlined position-absolute"
-                                                style="color:#9B9B9B;">
-                                                calendar_month
-                                            </span>
-
+                                            <a href="#"><span class="material-symbols-outlined position-absolute"
+                                                    style="color:#9B9B9B;margin-top: -35px;margin-left: 200px;">
+                                                    calendar_month
+                                                </span>
+                                            </a>
                                         </div>
 
                                     </form>
@@ -280,7 +347,8 @@
                             </div>
                             <!-- nav-tabs -->
                             <ul class="nav nav-tabs mt-3 ms-1">
-                                <li class="nav-item "><a href="#" class="nav-link  text-dark">Create Task</a></li>
+                                <li class="nav-item "><a href="/my project/project-4/proj-4.html"
+                                        class="nav-link  text-dark">Create Task</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link active" style="background-color: #e5ebfa
                                     ;color: #004CFF;border-bottom:2px solid #004CFF;">Assign
                                         Team</a></li>
@@ -294,6 +362,39 @@
                                             <label for="task" class="form-label">task</label>
                                             <input type="task" class="form-control form-control-lg fs-6"
                                                 placeholder="Requirement gathering" id="task">
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Requirement gathering</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item">UI/UX Design</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Database Design</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Web App Development</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Mobile App Development</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">API Development</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Testing</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Deployment</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Suprith Kumar</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">UAT</a></li>
+                                                    <li class="mt-2  ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Support</a></li>
+
+
+                                                </ul>
+
+                                            </div>
+
                                         </div>
                                     </form>
 
@@ -305,6 +406,35 @@
                                                 style="font-weight: 500;font-size: 14px;">Select Employee</label>
                                             <input type="project" class="form-control form-control-lg fs-6 "
                                                 placeholder="Arun" id="date">
+                                            <div class="dropdown down">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                    data-bs-toggle="dropdown">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li class="mt-1 ms-2">
+                                                        <div
+                                                            class="d-flex justify-content-between align-item-center text-muted">
+                                                            <p>search</p>
+                                                            <p> <span class="material-symbols-outlined">
+                                                                    search
+                                                                </span></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1 ms-2">
+                                                        <hr class="dropdown-divider mb-2 ms-0">
+                                                        <a href="dropdown-item" class="text-muted">Arun
+                                                        </a>
+                                                    </li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"> Raj kumar</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item" class="text-muted">
+                                                            Suprith Kumar</a></li>
+                                                    <li class="mt-1 ms-2"><a href="dropdown-item"
+                                                            class="text-muted">Suprith Kumar</a></li>
+
+
+                                                </ul>
+
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -381,17 +511,172 @@
                                     <p>12-08-2023</p>
                                 </div>
 
-                                <div class="col-lg-2 col-sm-4 mt-4">
+                                <div class="col-lg-1 col-sm-4 mt-4">
                                     <p style="font-size: 14px;color:#878686 ;">End Date</p>
                                     <p>12/07/2023</p>
                                 </div>
-                                <div class="col-lg-1 col-sm-4 mt-5">
-                                    <span class="material-symbols-outlined" style="color:#878686 ;">
-                                        edit
-                                    </span>
-                                    <span class="material-symbols-outlined" style="color:#878686 ;">
-                                        delete
-                                    </span>
+                                <div class="col-lg-1 col-sm-4 mt-3 d-flex">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+
+                                        <span class="material-symbols-outlined" style="color:#878686 ;">
+
+                                            edit
+                                        </span>
+                                    </button>
+                                    <div class="modal" id="myModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <!-- header -->
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Edit Task</h5>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+
+                                                </div>
+                                                <!-- body -->
+                                                <div class="modal-body">
+
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <form action="">
+                                                                <div class="form-grp">
+                                                                    <label for="task" class="form-label">Task</label>
+                                                                    <input type="task" class="form-control fs-6"
+                                                                        id="task" placeholder="UI/UX">
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <form action="">
+                                                                <div class="form-grp">
+                                                                    <label for="task" class="form-label">No. Of Hours
+                                                                        For This Task</label>
+                                                                    <input type="task" class="form-control fs-6"
+                                                                        id="task" placeholder="40 hrs">
+                                                                    <span
+                                                                        class="material-symbols-outlined position-absolute"
+                                                                        style="margin-left: 190px;margin-top: -30px;">
+                                                                        expand_more
+                                                                    </span>
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <form action="">
+                                                                <div class="form-grp">
+                                                                    <label for="task" class="form-label">Selected
+                                                                        Employee</label>
+                                                                    <input type="task" class="form-control fs-6"
+                                                                        id="task" placeholder="Arun">
+                                                                    <span
+                                                                        class="material-symbols-outlined position-absolute"
+                                                                        style="margin-left: 190px;margin-top: -30px;">
+                                                                        expand_more
+                                                                    </span>
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <form action="">
+                                                                <div class="form-grp">
+                                                                    <label for="S.DATE" class="form-label">Start
+                                                                        Date</label>
+                                                                    <input type="task" class="form-control fs-6"
+                                                                        id="task" placeholder="12-07-2023">
+                                                                    <span
+                                                                        class="material-symbols-outlined position-absolute month"
+                                                                        style="color: #9B9B9B; margin-top: -30px;margin-left: 150px;">
+                                                                        calendar_month
+                                                                    </span>
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <form action="">
+                                                                <div class="form-grp">
+                                                                    <label for="date" class="form-label">End Date</label>
+                                                                    <input type="task" class="form-control fs-6 mb-1 "
+                                                                        id="task" placeholder="20-07-2023">
+                                                                    <span
+                                                                        class="material-symbols-outlined position-absolute mb-5"
+                                                                        style="color: #9B9B9B;margin-left: 150px;margin-top: -33px;">
+                                                                        calendar_month
+                                                                    </span>
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn" data-bs-dismiss="modal">cancel
+
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">yes
+
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mymodal">
+                                        <span class="material-symbols-outlined" style="color:#878686 ;">
+                                            delete
+                                        </span>
+                                    </button>
+                                    <div class="modal" id="mymodal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <!-- header -->
+                                                <div class="modal-header">
+                                                    <div class=" d-flex justify-content-between">
+                                                        <img src="img-5/pop.svg" alt="popup" class="img-fluid"
+                                                            style="width: 50px;aspect-ratio: 1/1;">
+                                                        <h5 class="model-title ms-3 mt-3">Are you Sure want to Remove
+                                                            Contact Details</h5>
+                                                    </div>
+
+
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+
+                                                </div>
+                                                <!-- body -->
+                                                <div>
+                                                    <p class="mt-3 ms-3">Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry.</p>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary text-white"
+                                                        data-bs-dismiss="modal">Yes</button>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                 </div>
                             </div>
