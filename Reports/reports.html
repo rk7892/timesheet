@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reports.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
+    <script src="https://kit.fontawesome.com/f20c552953.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-2">
+            <!-- sidebar section -->
+            <div class="sidebar">
+                <img src="images/img 1.jpg" alt="ohoh product" class="img-fluid sideimg" />
+                <ul class="ul-list ">
+                    <li>
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                        <a href="/timesheet_dashboard/Time_sheet_dashboard/Dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <a href="#">My Clients</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-list-alt" aria-hidden="true"></i><a href="/my project/project.html">My
+                            Projects</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-user-o" aria-hidden="true"></i><a href="/My Employees/build1.html">My
+                            Employees</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-file" aria-hidden="true"></i><a href="/my timesheet/My Time Sheet.html">My
+                            Timesheet</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i><a href="">Approval </a>
+                    </li>
+                    <li id="report">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="">Reports</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-md-10">
+            <!-- header section -->
+            <div class="header d-flex">
+                <div>
+                    <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <div class="input-group ms-4 mt-3">
+                        <button class="btn" type="button">
+                            <i class="fas fa-search Search-icon"></i>
+                        </button>
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-header d-flex">
+                    <div> <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></div>
+                    <div id="header-text">Tushar B</div>
+                    <div>
+                        <img src="images/img 2.jpg" alt="image" class="img-logo" />
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Tushar B</a></li>
+                            <li><a class="dropdown-item" href="#">tushar@builint.com</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main section -->
+            <div class="main">
+                <div class="main-section d-flex justify-content-between">
+                    <div>
+                        <h2>Reports</h2>
+                    </div>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" />
+                        <i class="fa fa-search search-button"></i>
+                    </div>
+                </div>
+                <div>
+                    <form class="row mt-5" id="form2">
+                        <div class="col-md-2">
+                            <input type="date" class="form-control" id="inputEmail4" placeholder="Start Date " />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="date" class="form-control" id="inputEmail4" placeholder="End Date" />
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Project</option>
+                                <option value="1">SMRT</option>
+                                <option value="2">Hitachi</option>
+                                <option value="3">TATA</option>
+                                <option value="3">BuildINT</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Task</option>
+                                <option value="1">Design</option>
+                                <option value="2">Developing</option>
+                                <option value="3">Testing</option>
+                                <option value="3">Big Data</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Employee</option>
+                                <option value="1">Udhaya</option>
+                                <option value="2">Arun</option>
+                                <option value="3">Karthik</option>
+                                <option value="3">Vino</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary button"><a href="#"> <i class="fa fa-download pe-2"
+                                        aria-hidden="true"></i>Download</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
