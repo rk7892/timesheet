@@ -88,7 +88,7 @@
     height: 10px;
 }
 
-.th-text-dark {
+.table-text-dark {
     color: #000;
     font-family: Inter;
     font-size: 14px;
@@ -127,7 +127,7 @@
 
 }
 
-.t-d-t {
+.table-text-secondary{
     color: #878686;
     font-family: Inter;
     font-size: 14px;
@@ -216,7 +216,7 @@
 
 }
 
-.y-l-b {
+.yellow-left-border {
     width: 5px;
     height: 77px;
     background: #FFB406;
@@ -251,7 +251,7 @@
     line-height: normal;
 }
 
-.pill-p-hrs {
+.bill-project-hrs {
     color: #7E7E7E;
     text-align: center;
     font-family: Lato;
@@ -274,7 +274,7 @@
 
 }
 
-.g-l-b {
+.green-left-border {
     width: 5px;
     height: 77px;
     background: #00B71E;
@@ -291,7 +291,7 @@
     line-height: normal;
 }
 
-.r-l-b {
+.red-left-border {
     width: 5px;
     height: 77px;
     background: #EA1C2D;
