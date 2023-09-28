@@ -8,8 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BuildINT_Timeshee</title>
         <link rel="stylesheet" href="Dashboard.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/f20c552953.js" crossorigin="anonymous"></script>
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
         <!-- <link rel="stylesheet" href="/bootstrap-5.3.1-dist/css/bootstrap.min.css"> -->
         <!-- <script type="text/javascript" src="/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script> -->
@@ -145,7 +148,7 @@
             <div class="col-sm-10  ps-0 pe-0 ">
                 <div class="col-12 header shadow p-2 d-flex pt-3">
                     <!-- menu icon -->
-                    <div class="col-sm-1 header_menu">
+                    <div class="col-sm-1">
                         <a href="#collapseOne" class="btn" data-bs-toggle="collapse">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#666;"
                                 class="bi bi-list" viewBox="0 0 16 16">
@@ -155,20 +158,19 @@
                         </a>
                     </div>
                     <!-- search icon -->
-                    <div class="col-sm-1 pt-1">
-                        <div class="search-icon pt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#666;"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
+                    <div class="col-sm-2">
+                        <div class="input-group ms-1 mt-1">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                            <button class="btn" type="button">
+                                <i class="fas fa-search Search-icon"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="col-sm-5"></div>
                     <!-- notification and profile -->
-                    <div class="col-sm-5 d-flex">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-3 pt-3 d-flex">
+                    <div class="col-sm-4 d-flex">
+                        <div class="col-sm-2 d-flex"></div>
+                        <div class="col-sm-4 pt-3 d-flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="150" height="20" viewBox="0 0 114 18"
                                 fill="#000000">
                                 <path
@@ -183,7 +185,7 @@
                         <div class="col-sm-2 pt-3">
                             <h6 class="fs-6 fw-semibold">Tushar B</h6>
                         </div>
-                        <div class="col-sm-3 pt-2 ps-2 profile-arrow">
+                        <div class="col-sm-1 pt-2 ps-3 profile-arrow">
                             <svg xmlns="http://www.w3.org/2000/svg" dropdown-toggle data-bs-toggle="dropdown" width="18"
                                 height="18" fill="#000000" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -228,7 +230,8 @@
                                     <h6 class="mt-2 ps-2">Hours Allocation</h6>
                                 </div>
                                 <div class="col-sm-5 hours-allocation-dropdown d-flex justify-content-end">
-                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2" data-bs-toggle="dropdown">
+                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2"
+                                        data-bs-toggle="dropdown">
                                         Weekly
                                     </button>
                                     <ul class="dropdown-menu">
@@ -301,7 +304,8 @@
                                     <h6 class="mt-2 ps-2">Employee Utilisation</h6>
                                 </div>
                                 <div class="col-sm-4 hours-allocation-dropdown d-flex justify-content-end">
-                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2" data-bs-toggle="dropdown">
+                                    <button type="button" class="btn dropdown-toggle pt-0 mt-1 pe-2"
+                                        data-bs-toggle="dropdown">
                                         Weekly
                                     </button>
                                     <ul class="dropdown-menu">
@@ -315,7 +319,8 @@
                                 <h2>66Hrs</h2>
                             </div>
                             <div class="col-sm-12 d-flex">
-                                <div class="col-sm-6"><div class="d-flex employee-utilisation-percentage-other">
+                                <div class="col-sm-6">
+                                    <div class="d-flex employee-utilisation-percentage-other">
                                         <span class="rounded-pill ms-1"></span>
                                         <h6 class="ms-1">62%</h6>
                                         <h5 class="ps-2">Billable</h5>
@@ -341,7 +346,7 @@
                                         <path
                                             d="M94.0392 100.14C95.8296 102.243 95.588 105.418 93.3417 107.024C86.9474 111.596 79.6896 114.854 71.9884 116.59C62.6576 118.692 52.9557 118.495 43.7179 116.015C34.4801 113.536 25.9834 108.849 18.9593 102.357C11.9353 95.8646 6.5943 87.7627 3.39637 78.7484C0.198437 69.7342 -0.760653 60.0777 0.60169 50.6105C1.96403 41.1433 5.60697 32.1491 11.2168 24.4023C16.8267 16.6555 24.2354 10.3883 32.805 6.14025C39.8779 2.63415 47.5666 0.590234 55.4126 0.110247C58.1688 -0.0583777 60.3574 2.25454 60.2922 5.01519L59.8314 24.5179C59.7662 27.2786 57.4607 29.4202 54.7286 29.8215C51.6729 30.2703 48.6963 31.1975 45.9107 32.5784C41.6259 34.7024 37.9215 37.836 35.1166 41.7094C32.3117 45.5828 30.4902 50.0799 29.809 54.8135C29.1279 59.5471 29.6074 64.3753 31.2064 68.8825C32.8053 73.3896 35.4758 77.4405 38.9878 80.6865C42.4999 83.9325 46.7482 86.2763 51.3671 87.516C55.986 88.7557 60.837 88.8542 65.5024 87.803C68.5354 87.1196 71.4309 85.9636 74.0862 84.3864C76.4604 82.9761 79.6001 83.186 81.3906 85.2883L94.0392 100.14Z"
                                             fill="#00B71E" stroke="white" stroke-width="4"
-                                            mask="url(#path-2-inside-2_370_4334)"/>
+                                            mask="url(#path-2-inside-2_370_4334)" />
                                     </svg>
                                 </div>
                             </div>
@@ -364,8 +369,8 @@
                                     <h6 class="fs-3">05</h6>
                                 </div>
                                 <div class="col-sm-6 mt-2 mb-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        viewBox="0 0 50 50" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                        fill="none">
                                         <g filter="url(#filter0_d_521_4016)">
                                             <circle cx="20" cy="25" r="20" fill="#1755E7" />
                                         </g>
@@ -404,8 +409,8 @@
                                     <h6 class="fs-3">66</h6>
                                 </div>
                                 <div class="col-sm-6 mt-2 mb-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        viewBox="0 0 50 50" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                        fill="none">
                                         <g filter="url(#filter0_d_521_4021)">
                                             <circle cx="20" cy="25" r="20" fill="#0EB85B" />
                                         </g>
@@ -444,8 +449,8 @@
                                     <h6 class="fs-3">10</h6>
                                 </div>
                                 <div class="col-sm-6 mt-2 mb-2 d-flex justify-content-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        viewBox="0 0 50 50" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                                        fill="none">
                                         <g filter="url(#filter0_d_521_4022)">
                                             <circle cx="20" cy="25" r="20" fill="#A00EB8" />
                                         </g>
@@ -482,8 +487,440 @@
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="col-sm-12 d-flex">
+                        <!-- Timesheet Submission Status -->
+                        <div class="col-sm-6 mt-4 border rounded-3">
+                            <!-- Timesheet Submission Status header-->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-7 pt-3 ps-3">
+                                    <h5 class="fs-6">Timesheet Submission Status</h5>
+                                </div>
+                                <div class="col-sm-5 d-flex">
+                                    <div class="col-sm-6 me-2 d-flex justify-content-end">
+                                        <span class="rounded-pill mt-4"
+                                            style="width:20px; background-color: #E5E5E5;  display: inline-block; height: 10px; margin: 2px;"></span>
+                                        <h6 style="margin-top: 20px; margin-left: 5px; font-size: 14px;">Actual
+                                        </h6>
+                                    </div>
+                                    <div class="col-sm-6 ms-1 d-flex">
+                                        <span class="rounded-pill mt-4"
+                                            style="width:20px; background-color: #7000FF;  display: inline-block; height: 10px; margin: 2px;"></span>
+                                        <h6 style="margin-top: 20px; margin-left: 5px; font-size: 14px;">Submitted
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="margin-left: 15px; width: 95%;">
+                            <!-- Timesheet Submission Status week and chart-->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-sm-2 mt-3 chart_week">
+                                    <h6>4th week</h6>
+                                    <h6>3rd week</h6>
+                                    <h6>2nd week</h6>
+                                    <h6>1st week</h6>
+                                </div>
+                                <div class="col-sm-10 ms-4 mt-3 d-flex">
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:20%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:30%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:30%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:60%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:80%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:100%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:80%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:70%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:90%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:70%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:100%;"></div>
+                                    </div>
+                                    <div class="progress month" style="height:10px">
+                                        <div class="progress-bar" style="width:90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Timesheet Submission Status month -->
+                            <div class="col-sm-12 sub-status-month d-flex">
+                                <div class="col-sm-2">
 
-
+                                </div>
+                                <div class="col-sm-10 sub-status-month-month d-flex justify-content-around">
+                                    <h6>JAN</h6>
+                                    <h6>FEB</h6>
+                                    <h6>MAR</h6>
+                                    <h6>APR</h6>
+                                    <h6>MAY</h6>
+                                    <h6>JUN</h6>
+                                    <h6>JUL</h6>
+                                    <h6>AUG</h6>
+                                    <h6>SEP</h6>
+                                    <h6>OCT</h6>
+                                    <h6>NOV</h6>
+                                    <h6>DEC</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resource Billability -->
+                        <div class="col-sm-6 ms-2 resource-billability border rounded-3">
+                            <!-- Resource Billability Heading -->
+                            <div class="col-12 pt-4 ps-3">
+                                <h5 class="fs-6">Resource Billability (%)</h5>
+                            </div>
+                            <hr style="margin-left: 15px; width: 95%; margin-top: 20px;">
+                            <!-- Resource Billability Percentage -->
+                            <div class="col-12 d-flex ms-3 pt-2">
+                                <div class="col-1 chart_resource_percentage">
+                                    <h6>100%</h6>
+                                    <h6>80%</h6>
+                                    <h6>60%</h6>
+                                    <h6>40%</h6>
+                                    <h6>0</h6>
+                                </div>
+                                <div class="col-11 mt-4">
+                                    <img src="image/Line.png" alt="Resource chart">
+                                </div>
+                            </div>
+                            <!-- Resource Billability Month -->
+                            <div class="col-12 Resource-status-month d-flex">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-11 d-flex justify-content-around">
+                                    <h6>JAN</h6>
+                                    <h6>FEB</h6>
+                                    <h6>MAR</h6>
+                                    <h6>APR</h6>
+                                    <h6>MAY</h6>
+                                    <h6>JUN</h6>
+                                    <h6>JUL</h6>
+                                    <h6>AUG</h6>
+                                    <h6>SEP</h6>
+                                    <h6>OCT</h6>
+                                    <h6>NOV</h6>
+                                    <h6>DEC</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- our project & clients -->
+                    <div class="col-sm-12 d-flex">
+                        <!-- our project -->
+                        <div class="col-sm-7 mt-4 border rounded-3">
+                            <!-- our project header -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-10 ms-4 mt-3">
+                                    <h5>Our Project</h5>
+                                </div>
+                                <div class="col-1  mt-2">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle"
+                                            data-bs-toggle="dropdown">Weekly</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Daily</a></li>
+                                            <li><a class="dropdown-item" href="#">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- our project sub-header -->
+                            <div class="col-sm-12 our-project mt-4 ms-4 d-flex">
+                                <div class="col-4 pe-2">
+                                    <h6>project</h6>
+                                </div>
+                                <div class="col-2 ms-5">
+                                    <h6>members</h6>
+                                </div>
+                                <div class="col-3">
+                                    <h6>Worked House</h6>
+                                </div>
+                                <div class="col-3">
+                                    <h6>Completion</h6>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- shoppify -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-shopify.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Soft UI Shopify Version</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-3.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-4.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>60%</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Atlassian -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-atlassian.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Progress Track</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>10%</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- slack -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-slack.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Fix Platform Errors</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-3.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:100%; background-color: #52C41A;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- spotify -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-spotify.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Launch new Mobile App</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:100%; background-color: #52C41A;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- jira -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-jira.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Add the New Landing Page</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-3.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-4.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>80%</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- invision -->
+                            <div class="col-sm-12 d-flex">
+                                <div class="col-1 ms-3">
+                                    <img src="image/logo-invision.png" alt="">
+                                </div>
+                                <div class="col-4 mt-1 shopify">
+                                    <h6>Redesign Online Store</h6>
+                                </div>
+                                <div class="col-2">
+                                    <img src="image/face-1.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-2.png" class=" rounded-circle" alt="">
+                                    <img src="image/face-3.png" class=" rounded-circle" alt="">
+                                </div>
+                                <div class="col-2 face">
+                                    <h6>32:00 h</h6>
+                                </div>
+                                <div class="col-3 shopify-bar">
+                                    <div class="shopify-bar-percent">
+                                        <h6>cancel</h6>
+                                    </div>
+                                    <div class="progress completion" style="height: 5px; width: 105px;">
+                                        <div class="progress-bar" style="width:100%;  background-color: #F5222D;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- our clients -->
+                        <div class="col-sm-5 mt-4 ms-2 border rounded-3">
+                            <div class="col-10 ms-4 mt-3">
+                                <h5>Our Clients</h5>
+                            </div>
+                            <!-- amazon -->
+                            <div class="col-12 d-flex ps-3 mt-5">
+                                <div class="col-1">
+                                    <img src="image/amazon-icon-1 1.svg" alt="amazon">
+                                </div>
+                                <div class="col-10 our-client">
+                                    <h6>Amazon.com, Inc.<br>AMZN</h6>
+                                </div>
+                                <div class="col-1">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+                                            fill="none">
+                                            <path
+                                                d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
+                                                fill="#747474" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- coca cola -->
+                            <div class="col-12 d-flex ps-3 mt-4">
+                                <div class="col-1">
+                                    <img src="image/coca-cola-6 1.svg" alt="amazon">
+                                </div>
+                                <div class="col-10 our-client">
+                                    <h6>Coca-Cola Co<br> KO</h6>
+                                </div>
+                                <div class="col-1">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+                                            fill="none">
+                                            <path
+                                                d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
+                                                fill="#747474" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- BMW -->
+                            <div class="col-12 d-flex ps-3 mt-4">
+                                <div class="col-1">
+                                    <img src="image/bmw 1.svg" alt="amazon">
+                                </div>
+                                <div class="col-10 our-client">
+                                    <h6>Bayerische Motoren Werke AG<br> BMW</h6>
+                                </div>
+                                <div class="col-1">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+                                            fill="none">
+                                            <path
+                                                d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
+                                                fill="#747474" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- microsoft -->
+                            <div class="col-12 d-flex ps-3 mt-4">
+                                <div class="col-1">
+                                    <img src="image/microsoft 1.svg" alt="amazon">
+                                </div>
+                                <div class="col-10 our-client">
+                                    <h6>Microsoft Corp<br> MSFT</h6>
+                                </div>
+                                <div class="col-1">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+                                            fill="none">
+                                            <path
+                                                d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
+                                                fill="#747474" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- UPS -->
+                            <div class="col-12 d-flex ps-3 mt-4">
+                                <div class="col-1">
+                                    <img src="image/ups 1.svg" alt="amazon">
+                                </div>
+                                <div class="col-10 our-client">
+                                    <h6>United Parcel Service,<br> Inc. UPS</h6>
+                                </div>
+                                <div class="col-1">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+                                            fill="none">
+                                            <path
+                                                d="M6.293 5.29288C6.68353 5.6834 6.68353 6.31656 6.293 6.70709L1.87322 11.1269C1.58221 11.4179 1.1104 11.4179 0.819393 11.1269C0.528387 10.8359 0.528387 10.3641 0.819392 10.0731L4.89248 5.99998L0.819392 1.9269C0.528387 1.63589 0.528387 1.16408 0.819393 0.873072C1.1104 0.582066 1.58221 0.582066 1.87322 0.873073L6.293 5.29288Z"
+                                                fill="#747474" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

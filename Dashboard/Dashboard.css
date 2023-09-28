@@ -16,7 +16,7 @@ body,html{
     margin-top: 5px;
 }
 .dropdown-menu{
-    width: 150px;
+    width: 200px;
 }
 .profile-arrow-mail{
     color: #667085;
@@ -112,26 +112,26 @@ body,html{
     color: #838383;
     font-size: 14px;
     font-weight: 400;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 .month{
     transform: rotate(-90deg);
-    width: 150px;
-    margin-left: -50px;
-    margin-top: 90px;
-    /* background-color: #7000FF; */
+    width: 200px;
+    margin-left: -90px;
+    margin-top: 80px;
 }
-/* .progress-bar{
-    background-color:#7000FF;
-}
-.prog{
-    background-color: #7000FF;
-    color: #7000FF;
-} */
 .sub-status-month h6{
     color: #838383;
     font-size: 12px;
     font-weight: 400;
+}
+.sub-status-month-month{
+    margin-left: -20px;
+    padding-top: 15px;
+}
+.resource-billability{
+    margin-top: -90px;
 }
 .chart_resource_percentage>h6{
     color: #838383;
@@ -143,18 +143,27 @@ body,html{
     color: #838383;
     font-size: 12px;
     font-weight: 400;
-    margin-left: 60px;
-    /* display: flex;
-    justify-content: space-between; */
+}
+.our-project{
+    color: #838383;
+    font-size: 12px;
+    font-weight: 400;
 }
 .shopify h6{
     font-size: 14px;
     color: #252F40;
     margin-left: -20px;
 }
+.shopify-bar{
+    margin-left: 50px;
+}
+.shopify-bar-percent>h6{
+    color: #67748E;
+}
 .rounded-circle{
     margin-left: -10px;
 }
-.face h6{
-    color: #8392AB;;
+.our-client h6{
+    color: #8392AB;
+    font-size: 14px ;
 }
