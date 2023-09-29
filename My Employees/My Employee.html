@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Employee-list</title>
+    <link rel="stylesheet" href="My Employee.css">
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--boot link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- bootstarp java script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--fontlink-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mulish:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class=" col-sm-2 col-md-2 col-lg-2 d-flex shadow bg-body-white"
+                style=" font-size: 13px; height: 43rem;">
+                <!--sidebar-->
+                <div class="sidebar">
+                    <img src="images/ohoh.jpeg" class="image-fluid mt-3" style="width: 170px;">
+                    <ul class="nav nav-navbar flex-column">
+                        <li class="nav-item"><a href="Dashboard" class="nav-link text-dark mt-4">
+                                <i class="bi bi-grid fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">Dashboard</span></a></li>
+
+                        <li class="nav-item my-1"><a href="My Clients" class="nav-link text-dark">
+                                <i class="bi bi-people fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">My clients</span></a></li>
+
+                        <li class="nav-item my-1"><a href="My Projects" class="nav-link text-dark">
+                                <i class="bi bi-card-list fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">My Projects</span></a></li>
+
+                        <li class="nav-item my-1 rounded" style="background-color: #004cff;">
+                            <a href=" My Employee.html" class="nav-link text-white">
+                                <i class="bi bi-person fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">My Employees</span></a></li>
+
+                        <li class="nav-item my-1"><a href="My Timesheet" class="nav-link text-dark">
+                                <i class="bi bi-file-earmark-text fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">My Timesheet</span></a></li>
+
+                        <li class="nav-item my-1"><a href="Approval" class="nav-link text-dark">
+                                <i class="bi bi-file-text fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">Approval</span></a></li>
+
+                        <li class="nav-item my-1"><a href="Reports" class="nav-link text-dark">
+                                <i class="bi bi-file-earmark-check fs-6 px-2"></i>
+                                <span class="d-none d-sm-inline">Reports</span></a></li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--topnav-->
+
+            <div class="col-sm-10 col-md-10 col-lg-10 bg-white shadow-lg bg-body-white" style="height: 50px;">
+                <div class="navbar">
+                    <i class="bi-list fs-4 mb-3 mx-3"></i>
+                    <i class="bi-search me-auto  mb-3 mx-4 fs-6"></i>
+                    <i class="bi-bell fs-5 mb-3 "></i>
+                    <p class="fs-6 mx-3">Tushar B</p>
+                    <img src="images/buildimg.jpeg" class="mb-3" style="width: 30px;">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle mb-3" data-bs-toggle="dropdown"
+                            aria-expanded="false"></button>
+                        <ul class="dropdown-menu" style="font-family: 'Mulish'; font-size: 12px; margin-left: -120px;">
+                            <li><a href="#" class="dropdown-item"> Tushar B</a></li>
+                            <li><a href="#" class="dropdown-item"> tushar@buildint.com</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#" class="dropdown-item">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#" class="dropdown-item">Help</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#" class="dropdown-item">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--topnav end-->
+                <!--main-->
+                <div class="main d-flex">
+                    <h3 class="mx-1 mt-1">My Employee List</h3>
+                    <form class="form-search ms-auto d-flex">
+                        <input type="text" class="form-control" placeholder="Search Employee">
+                        <button class="btn"><i class="bi bi-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <!--table start-->
+                <div class="table-lines mt-3">
+                    <table class="table mx-2">
+
+
+                        <thead>
+                            <tr>
+
+                                <th>Employee ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email ID</th>
+                                <th>Department<i class="bi bi-filter"></i></th>
+                                <th>Reporting Manager</th>
+                                <th>Joining Date<i class="bi bi-chevron-expand"></i></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td><a href="Employee Details.html" class="nav-link">U 123456</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">Nathan</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">Robert</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">udhaya@blint.co</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">UI/UX</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">Tushar B</td></a>
+                                <td><a href="Employee Details.html" class="nav-link">12/07/2023</td></a>
+                            </tr>
+
+                            <tr>
+
+                                <td>U 123456</td>
+                                <td>Floyd</td>
+                                <td>Ronald</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Floyd</td>
+                                <td>Ronald</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Randall</td>
+                                <td>Jacob</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Bernard</td>
+                                <td>Dianne</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Harold</td>
+                                <td>Eleanor</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Eduardo</td>
+                                <td>Ralph</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Bruce</td>
+                                <td>Kathryn</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Lee</td>
+                                <td>Darrell</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+                            <tr>
+                                <td>U 123456</td>
+                                <td>Cameron</td>
+                                <td>Green</td>
+                                <td>Udhaya@blint.co</td>
+                                <td>UI/UX</td>
+                                <td>Tushar B</td>
+                                <td>12/07/2023</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <!--table end-->
+                <!--button-->
+                <div class="plus-button">
+                    <a href="create Employee.html"><button class="btn btn-primary text-white">+</button></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

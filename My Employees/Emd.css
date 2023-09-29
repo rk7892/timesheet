@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter';
+}
+
+.container-fluid {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+
+#Emd-row label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+#Emd-row input {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#Emd-pro-1 p{
+    background-color: #ecf1fd;
+    color: #1d5ae7;
+    height: 20px;
+    width: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+.Ed-footer label{
+    font-size: 16px;
+
+}
+.Ed-footer input{
+    font-size: 12px;
+}
