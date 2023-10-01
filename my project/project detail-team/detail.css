@@ -42,8 +42,8 @@ body {
     background-color: #FCFCFD;
     height: 80px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     /* flex-wrap: wrap; */
 
 
