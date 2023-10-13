@@ -180,10 +180,7 @@ input[type="text"] {
     font-size: 18px;
     color: #666;
 }
-#form2 {
-    margin-top: 30px;
-    margin-left: 10px;
-}
+
 
 
 #inputEmail4 {
@@ -202,10 +199,7 @@ input[type="text"] {
     line-height: normal;
 }
 
-.form-select {
 
-    height: 60px;
-}
 
 .form-select option {
     color: #707070;
